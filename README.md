@@ -38,7 +38,7 @@ This is a weapon mod for Robocop Doom mod (https://mikestoybox.net/2019/03/31/ro
 
 ## Recommended mods to combine with:
 
-* [Nash's Gore Mod: Vengeance Edition:](https://www.moddb.com/mods/nashs-gore-mod-vengeance-edition)
+* [Nash's Gore Mod: Vengeance Edition](https://www.moddb.com/mods/nashs-gore-mod-vengeance-edition)
 
 
 ## Credits
