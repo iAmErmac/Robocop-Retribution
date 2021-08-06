@@ -6,6 +6,8 @@ This is a 3D weapon mod to use with Robocop Doom mod (GZDoom VR). By design, thi
 
 [![Download Now](https://raster.shields.io/github/downloads/iAmErmac/Robocop-Doom-VR-Weapons/total)](https://github.com/iAmErmac/Robocop-Doom-VR-Weapons/releases/latest)
 
+[<img src="https://cdn.ko-fi.com/cdn/kofi2.png?v=2" height="36" alt="Buy me a Cofee!">](https://ko-fi.com/ermac)
+
 ## Features
 * 3D Weapon models
 * Cross-wad support, can be used with other supported iwad
