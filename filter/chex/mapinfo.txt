@@ -1,0 +1,21 @@
+Gameinfo
+{
+	Playerclasses = "NewRoboPlayer"
+}
+
+clearepisodes
+
+episode E1M1
+{
+   picname = "M_EPI1"
+}
+
+episode E2M1
+{
+   picname = "M_EPI2"
+}
+
+episode E3M1
+{
+   picname = "M_EPI3"
+}

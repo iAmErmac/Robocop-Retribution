@@ -1,0 +1,68 @@
+
+//Replace doom weapons
+Actor Robo_Buzzsaw: RandomSpawner replaces Gauntlets 2005 { DropItem "Grinder_3D" }
+Actor Robo_Pistol: RandomSpawner replaces GoldWand 9042 { DropItem "Auto9_3D" }
+Actor Robo_Shotgun: RandomSpawner replaces Crossbow 2001 { DropItem "RoboShotgun_3D" }
+Actor Robo_HeavyWeapon: RandomSpawner replaces Blaster 53
+{
+	DropItem "Ed209Gun_3D", 256, 9
+	DropItem "CobraAssaultCannon_3D", 256, 1
+}
+Actor Robo_RocketLauncher: RandomSpawner replaces PhoenixRod 2003 { DropItem "MiniMissileShooter_3D" }
+Actor Robo_PlasmaRifle: RandomSpawner replaces SkullRod 2004 { DropItem "M27PlasmaRifle_3D" }
+Actor Robo_SniperRifle: RandomSpawner replaces Mace { DropItem "CobraAssaultCannon_3D" }
+
+//Replace doom pickups
+
+Actor Robo_PistolAmmo: RandomSpawner replaces GoldWandAmmo 10 { DropItem "Auto9Clip" }
+Actor Robo_Shell: RandomSpawner replaces CrossbowAmmo 18 { DropItem "Shell" }
+Actor Robo_RifleAmmo: RandomSpawner replaces CrossbowHefty 19 { DropItem "BoomSlug" }
+Actor Robo_ChaingunAmmo: RandomSpawner replaces GoldWandHefty 12 { DropItem "20mmSlug" }
+Actor Robo_PistolAmmo2: RandomSpawner replaces BlasterAmmo 54 { DropItem "Auto9Clip" }
+Actor Robo_ChaingunAmmo2: RandomSpawner replaces BlasterHefty 55 { DropItem "20mmSlug" }
+Actor Robo_RocketAmmo: RandomSpawner replaces PhoenixRodAmmo 22 { DropItem "MiniRocketAmmo" }
+Actor Robo_RocketBelt: RandomSpawner replaces PhoenixRodHefty 23 { DropItem "MiniRocketBelt" }
+Actor Robo_CellAmmo: RandomSpawner replaces SkullRodAmmo 20 { DropItem "Cell" }
+Actor Robo_CellBox: RandomSpawner replaces SkullRodHefty 21 { DropItem "CellBox" }
+Actor Robo_HeavyAmmo: RandomSpawner replaces MaceAmmo 13
+{
+	DropItem "Shell"
+	DropItem "20mmSlug"
+	DropItem "BoomSlug"
+	DropItem "MiniRocketAmmo"
+}
+Actor Robo_HeavyAmmoBox: RandomSpawner replaces MaceHefty 16
+{
+	DropItem "20mmSlug"
+	DropItem "MiniRocketBelt"
+	DropItem "CellBox"
+}
+
+Actor ReflectorShield: ArtiTomeOfPower replaces ArtiTomeOfPower 86
+{
+	+COUNTITEM
+	+FLOATBOB
+	+INVENTORY.PICKUPFLASH
+	Inventory.Icon "ARTIPWBK"
+	Inventory.PickupMessage "Picked up a Magic Shield Power"
+	Tag "Deflector Shield"
+	Powerup.Duration -30
+	powerup.color blue 0.25
+	Powerup.Type ReflectionShield
+	powerup.mode Reflective
+	States
+	{
+	Spawn:
+		PWBK A 350
+		Loop
+	}
+}
+
+Actor PowerReflectionShield: PowerInvulnerable
+{
+	Powerup.Duration -30
+	powerup.color blue 0.25
+	powerup.mode Reflective
+	Inventory.Icon "SPINBK0"
+	+INVENTORY.NOTELEPORTFREEZE
+}

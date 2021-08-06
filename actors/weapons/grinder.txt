@@ -1,0 +1,44 @@
+
+ACTOR Grinder_3D : Grinder replaces Grinder
+{
+  States
+  {
+	Ready:
+		HSAW ABCDEFGHIJK 1 A_WeaponReady
+		HSW2 ABCDEFGHIJKLMNOPQRSTUVWXYZ 1 A_WeaponReady
+		Loop
+	Fire:
+		"####" # 0 A_JumpIf(GetCVAR("rvw_weapons")==1, "Fire.Enhanced")
+		HSWA ABC 1
+		HSWA D 1 A_Saw
+	Hold:
+		HSWA EFG 1
+		HSWA H 1 A_Saw
+		HSWA H 0 A_ReFire
+		Goto Ready
+	Fire.Enhanced:
+		HSWA ABC 1
+		HSWA D 1 A_Saw("","weapons/sawhit",2,"ChainsawPuff") 
+	Hold.Enhanced:
+		HSWA EFG 1
+		HSWA H 1 A_playsound("weapons/sawfull",4,1.0,TRUE)
+		HSWA H 0 A_Saw("","weapons/sawhit",2,"ChainsawPuff")
+		HSWA H 0 A_ReFire("Hold.Enhanced")
+		TNT1 A 0 A_Stopsound(4)
+		TNT1 A 0 A_WeaponReady
+		Goto Ready
+	Hold:
+		HSWA EFG 1
+		HSWA H 1 A_Saw
+		HSWA H 0 A_ReFire
+		Goto Ready
+	Spawn:
+		HSAW P 0 A_JumpIf(GetCVAR("rvw_pickupmodel")==1, "Spawn3D")
+		HSAW P 1
+		loop
+	Spawn3D:
+		HSAW A 0 A_JumpIf(GetCVAR("rvw_pickupmodel")==0, "Spawn")
+		HSWP A 1 Bright
+		loop
+  }
+}

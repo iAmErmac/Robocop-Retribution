@@ -1,0 +1,64 @@
+//Sounds for enhanced mode
+
+//Taken from Beautiful Doom
+
+$random weapons/tracerwhizz { weapons/tracerwhizz1 weapons/tracerwhizz2 weapons/tracerwhizz3 }
+$limit weapons/tracerwhizz 2
+weapons/tracerwhizz1	TRACER1
+weapons/tracerwhizz2	TRACER2
+weapons/tracerwhizz3	TRACER3
+
+$random weapons/ricochet { weapons/ricochet1 weapons/ricochet2 weapons/ricochet3 weapons/ricochet4 weapons/ricochet5 weapons/ricochet6 weapons/ricochet7 }
+$limit weapons/ricochet 0
+weapons/ricochet1	RICO1
+weapons/ricochet2	RICO2
+weapons/ricochet3	RICO3
+weapons/ricochet4	RICO4
+weapons/ricochet5	RICO5
+weapons/ricochet6	RICO6
+weapons/ricochet7	RICO7
+
+chaingun2/fire		CHGNSHOT
+
+
+//Taken from Brutal Doom and Beautiful Doom
+
+//Melee hits
+melee/punch1		DSPUNCH2
+melee/punch2		FOOTWALL
+melee/stone			KNSTON
+melee/metal1		DSMETALB
+melee/metal2		MET04
+
+$random melee/hitwall { melee/punch1 melee/punch2 }
+
+$random spike/hitwall { melee/metal1 melee/metal2 melee/stone }
+
+$random melee/hitbody { melee/punchbody1 melee/punchbody2 melee/punchbody3 melee/punchbody4 melee/punchbody5 melee/punchbody6 }
+melee/punchbody1	PLSPNCH1
+melee/punchbody2	PLSPNCH2
+melee/punchbody3	PLSPNCH3
+melee/punchbody4	PLSPNCH4
+melee/punchbody5	PLSPNCH5
+melee/punchbody6	PLSPNCH6
+
+$random melee/swing { melee/swing1 melee/swing2 melee/swing3 }
+melee/swing1		FSTATK1
+melee/swing2		FSTATK2
+melee/swing3		FSTATK3
+
+//Chainsaw
+weapons/chainsaw/start		CSAWSTRT
+weapons/chainsaw/loop		CSAWLOOP
+
+$random weapons/chainsaw/hitwall { weapons/chainsaw/hitwall1 weapons/chainsaw/hitwall2 weapons/chainsaw/hitwall3 weapons/chainsaw/hitwall4 }
+weapons/chainsaw/hitwall1	DSSAWAL1
+weapons/chainsaw/hitwall2	DSSAWAL2
+weapons/chainsaw/hitwall3	DSSAWAL3
+weapons/chainsaw/hitwall4	DSSAWAL4
+
+//Rocket
+minimissile/launch		RLAUNCH1
+minimissile/fire		RLFIRE
+minimissile/fly			RLLOOP
+minimissile/explode		RLANEXPL

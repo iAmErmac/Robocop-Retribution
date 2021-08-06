@@ -1,0 +1,527 @@
+
+//Taken from Beautiful Doom
+
+decal SawMark1
+{
+	pic SAWMARK1
+	x-scale 0.04
+	y-scale 0.04
+	randomflipx
+	//randomflipy
+	add 0.3
+	shade "00 00 00"
+}
+
+decal SawMark2
+{
+	pic SAWMARK2
+	x-scale 0.04
+	y-scale 0.04
+	randomflipx
+	//randomflipy
+	add 0.3
+	shade "00 00 00"
+}
+
+decal SawMark3
+{
+	pic SAWMARK3
+	x-scale 0.04
+	y-scale 0.04
+	randomflipx
+	//randomflipy
+	add 0.3
+	shade "00 00 00"
+}
+
+decal SawMark4
+{
+	pic SAWMARK4
+	x-scale 0.04
+	y-scale 0.04
+	randomflipx
+	//randomflipy
+	add 0.3
+	shade "00 00 00"
+}
+
+decalgroup SawMark
+{
+	SawMark1	1
+	SawMark2	1
+	SawMark3	1
+	SawMark4	1
+}
+
+decal BulletChip1
+{
+	pic CHIP1
+	translucent 0.85
+	shade "00 00 00"
+	x-scale 0.07
+	y-scale 0.07
+	randomflipx
+	randomflipy
+}
+
+decal BulletChip2
+{
+	pic CHIP2
+	translucent 0.85
+	shade "00 00 00"
+	x-scale 0.07
+	y-scale 0.07
+	randomflipx
+	randomflipy
+}
+
+decal BulletChip3
+{
+	pic CHIP3
+	translucent 0.85
+	shade "00 00 00"
+	x-scale 0.07
+	y-scale 0.07
+	randomflipx
+	randomflipy
+}
+
+decal BulletChip4
+{
+	pic CHIP4
+	translucent 0.85
+	shade "00 00 00"
+	x-scale 0.07
+	y-scale 0.07
+	randomflipx
+	randomflipy
+}
+
+decal BulletChip5
+{
+	pic CHIP5
+	translucent 0.85
+	shade "00 00 00"
+	x-scale 0.07
+	y-scale 0.07
+	randomflipx
+	randomflipy
+}
+
+decalgroup BulletChip
+{
+	BulletChip1		1
+	BulletChip2		1
+	BulletChip3		1
+	BulletChip4		1
+	BulletChip5		1
+}
+
+decal ShotChip1
+{
+	pic CHIP1
+	translucent 0.85
+	shade "00 00 00"
+	x-scale 0.03
+	y-scale 0.03
+	randomflipx
+	randomflipy
+}
+
+decal ShotChip2
+{
+	pic CHIP2
+	translucent 0.85
+	shade "00 00 00"
+	x-scale 0.03
+	y-scale 0.03
+	randomflipx
+	randomflipy
+}
+
+decal ShotChip3
+{
+	pic CHIP3
+	translucent 0.85
+	shade "00 00 00"
+	x-scale 0.03
+	y-scale 0.03
+	randomflipx
+	randomflipy
+}
+
+decal ShotChip4
+{
+	pic CHIP4
+	translucent 0.85
+	shade "00 00 00"
+	x-scale 0.03
+	y-scale 0.03
+	randomflipx
+	randomflipy
+}
+
+decal ShotChip5
+{
+	pic CHIP5
+	translucent 0.85
+	shade "00 00 00"
+	x-scale 0.03
+	y-scale 0.03
+	randomflipx
+	randomflipy
+}
+
+decalgroup ShotChip
+{
+	ShotChip1	1
+	ShotChip2	1
+	ShotChip3	1
+	ShotChip4	1
+	ShotChip5	1
+}
+
+decal Scorch1
+{
+	pic SCORCH1
+	shade "00 00 00"
+	x-scale 0.2
+	y-scale 0.2
+	randomflipx
+	randomflipy
+}
+
+decal Scorch2
+{
+	pic SCORCH2
+	shade "00 00 00"
+	x-scale 0.2
+	y-scale 0.2
+	randomflipx
+	randomflipy
+}
+
+decal Scorch3
+{
+	pic SCORCH3
+	shade "00 00 00"
+	x-scale 0.2
+	y-scale 0.2
+	randomflipx
+	randomflipy
+}
+
+decalgroup Scorch
+{
+	Scorch1	1
+	Scorch2	1
+	Scorch3	1
+}
+
+decal BigScorch1
+{
+	pic SCORCH1
+	shade "00 00 00"
+	x-scale 0.5
+	y-scale 0.5
+	randomflipx
+	randomflipy
+}
+
+// plasma fade
+
+fader PFade
+{
+DecayStart 0
+DecayTime 3
+}
+
+decal PlasmaBoltSplat1
+{
+lowerdecal Scorch
+add 0.7
+fullbright
+animator PFade
+pic PSPLAT01
+randomflipx
+randomflipy
+x-scale 0.5
+y-scale 0.5
+}
+
+decal PlasmaBoltSplat2
+{
+lowerdecal Scorch
+add 0.7
+fullbright
+animator PFade
+pic PSPLAT02
+randomflipx
+randomflipy
+x-scale 0.5
+y-scale 0.5
+}
+
+decal PlasmaBoltSplat3
+{
+lowerdecal Scorch
+add 0.7
+fullbright
+animator PFade
+pic PSPLAT03
+randomflipx
+randomflipy
+x-scale 0.5
+y-scale 0.5
+}
+
+decal PlasmaBoltSplat4
+{
+lowerdecal Scorch
+add 0.7
+fullbright
+animator PFade
+pic PSPLAT04
+randomflipx
+randomflipy
+x-scale 0.5
+y-scale 0.5
+}
+
+decal PlasmaBoltSplat5
+{
+lowerdecal Scorch
+add 0.7
+fullbright
+animator PFade
+pic PSPLAT05
+randomflipx
+randomflipy
+x-scale 0.5
+y-scale 0.5
+}
+
+decal PlasmaBoltSplat6
+{
+lowerdecal Scorch
+add 0.7
+fullbright
+animator PFade
+pic PSPLAT06
+randomflipx
+randomflipy
+x-scale 0.5
+y-scale 0.5
+}
+
+decalgroup PlasmaBoltSplat
+{
+PlasmaBoltSplat1 6
+PlasmaBoltSplat2 6
+PlasmaBoltSplat3 6
+PlasmaBoltSplat4 6
+PlasmaBoltSplat5 6
+PlasmaBoltSplat6 6
+}
+
+
+//Taken from D4T
+
+
+fader GoAwayBulletGlow
+{
+	DecayStart	0.5
+	DecayTime	1.0
+}
+
+decal NewBulletChip1
+{
+	pic Bullet1
+	x-scale 0.15
+	y-scale 0.15
+	randomflipx
+	randomflipy
+	translucent 0.85
+	shade "00 00 00"
+}
+
+decal NewBulletChip2
+{
+	pic Bullet2
+	x-scale 0.15
+	y-scale 0.15
+	randomflipx
+	randomflipy
+	translucent 0.85
+	shade "00 00 00"
+}
+decal NewBulletChip3
+{
+	pic Bullet3
+	x-scale 0.15
+	y-scale 0.15
+	randomflipx
+	randomflipy
+	translucent 0.85
+	shade "00 00 00"
+}
+decal NewBulletChip4
+{
+	pic Bullet4
+	x-scale 0.15
+	y-scale 0.15
+	randomflipx
+	randomflipy
+	translucent 0.85
+	shade "00 00 00"
+}
+decal NewBulletChip5
+{
+	pic Bullet5
+	x-scale 0.15
+	y-scale 0.15
+	randomflipx
+	randomflipy
+	translucent 0.85
+	shade "00 00 00"
+}
+
+decal NewBulletChip1Glow	//Glowing spot
+{
+	pic FX01D0
+	x-scale 0.051
+	y-scale 0.051
+	randomflipx
+	randomflipy
+	shade "ff4e00"
+	Fullbright
+	animator GoAwayBulletGlow
+	LowerDecal "NewBulletChip1"
+}
+decal NewBulletChip2Glow
+{
+	pic FX01D0
+	x-scale 0.051
+	y-scale 0.051
+	randomflipx
+	randomflipy
+	shade "ff4e00"
+	Fullbright
+	animator GoAwayBulletGlow
+	LowerDecal "NewBulletChip2"
+}
+decal NewBulletChip3Glow
+{
+	pic FX01D0
+	x-scale 0.051
+	y-scale 0.051
+	randomflipx
+	randomflipy
+	shade "ff4e00"
+	Fullbright
+	animator GoAwayBulletGlow
+	LowerDecal "NewBulletChip3"
+}
+decal NewBulletChip4Glow
+{
+	pic FX01D0
+	x-scale 0.051
+	y-scale 0.051
+	randomflipx
+	randomflipy
+	shade "ff4e00"
+	Fullbright
+	animator GoAwayBulletGlow
+	LowerDecal "NewBulletChip4"
+}
+decal NewBulletChip5Glow
+{
+	pic FX01D0
+	x-scale 0.051
+	y-scale 0.051
+	randomflipx
+	randomflipy
+	shade "ff4e00"
+	Fullbright
+	animator GoAwayBulletGlow
+	LowerDecal "NewBulletChip5"
+}
+
+decalgroup BulletChipGlow //with glowy stuff
+{
+	NewBulletChip1Glow	1
+	NewBulletChip2Glow	1
+	NewBulletChip3Glow	1
+	NewBulletChip4Glow	1
+	NewBulletChip5Glow	1
+}
+
+decal ShotChip1Glow	//Glowing spot
+{
+	pic FX01D0
+	x-scale 0.025
+	y-scale 0.025
+	randomflipx
+	randomflipy
+	shade "ff4e00"
+	Fullbright
+	animator GoAwayBulletGlow
+	LowerDecal "ShotChip1"
+}
+decal ShotChip2Glow
+{
+	pic FX01D0
+	x-scale 0.025
+	y-scale 0.025
+	randomflipx
+	randomflipy
+	shade "ff4e00"
+	Fullbright
+	animator GoAwayBulletGlow
+	LowerDecal "ShotChip2"
+}
+decal ShotChip3Glow
+{
+	pic FX01D0
+	x-scale 0.025
+	y-scale 0.025
+	randomflipx
+	randomflipy
+	shade "ff4e00"
+	Fullbright
+	animator GoAwayBulletGlow
+	LowerDecal "ShotChip3"
+}
+decal ShotChip4Glow
+{
+	pic FX01D0
+	x-scale 0.025
+	y-scale 0.025
+	randomflipx
+	randomflipy
+	shade "ff4e00"
+	Fullbright
+	animator GoAwayBulletGlow
+	LowerDecal "ShotChip4"
+}
+decal ShotChip5Glow
+{
+	pic FX01D0
+	x-scale 0.025
+	y-scale 0.025
+	randomflipx
+	randomflipy
+	shade "ff4e00"
+	Fullbright
+	animator GoAwayBulletGlow
+	LowerDecal "ShotChip5"
+}
+
+decalgroup ShotChipGlow //with glowy stuff
+{
+	ShotChip1Glow	1
+	ShotChip2Glow	1
+	ShotChip3Glow	1
+	ShotChip4Glow	1
+	ShotChip5Glow	1
+}

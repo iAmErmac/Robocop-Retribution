@@ -1,0 +1,32 @@
+AddOptionMenu "OptionsMenu"
+{
+	StaticText " "
+	Submenu "Robocop VR Settings", "RVRW_Settings"
+}
+
+OptionMenu "RVRW_Settings" {
+	Title "Robocop VR Settings"
+	StaticText " "
+	
+	Option "Pickup graphics", "rvw_pickupmodel", "VR_PickupModel_Option"
+	Option "Weapons mode", "rvw_weapons", "VR_Weapons_Option"
+	Option "Bullet Tracers", "rvw_tracers", "OnOff"
+	Option "Muzzle Flash sprite", "rvw_weapons_mf", "OnOff"
+	
+	Ifgame(CHEX,DOOM)
+	{
+	StaticText " "
+	Option "Replace monsters with Goons", "rvw_robocop_goons", "OnOff"
+	StaticText "*Requires a map restart", "Grey"
+	}
+}
+
+OptionValue "VR_Weapons_Option" {
+	0, "Default"
+	1, "Enhanced SFX"
+}
+
+OptionValue "VR_PickupModel_Option" {
+	0, "Sprite"
+	1, "3D"
+}

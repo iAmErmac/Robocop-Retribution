@@ -1,0 +1,27 @@
+// Fist
+material texture "models/weapons/fist/glove.png" { shader "shaders/simsun.fp" }
+
+// Buzzsaw
+material texture "models/weapons/chainsaw/chainsaw.jpg" { shader "shaders/simsun.fp" }
+
+// Auto9 pistol
+material texture "models/weapons/auto9/auto9.png" { shader "shaders/simsun.fp" }
+
+// Shotgun
+material texture "models/weapons/ksg/ksg_back.png" { shader "shaders/simsun.fp" }
+material texture "models/weapons/ksg/ksg_front.png" { shader "shaders/simsun.fp" }
+
+// Rifle
+material texture "models/weapons/cobra/cobra_tex.jpg" { shader "shaders/simsun.fp" }
+
+// Missile launcher
+material texture "models/weapons/m32/m32_tex1.png" { shader "shaders/simsun.fp" }
+material texture "models/weapons/m32/m32_tex2.png" { shader "shaders/simsun.fp" }
+
+// Missile launcher
+material texture "models/weapons/chaingun/Chaingun.png" { shader "shaders/simsun.fp" }
+material texture "models/weapons/chaingun/ChaingunFin.png" { shader "shaders/simsun.fp" }
+
+// Plasma rifle
+material texture "models/weapons/m27/m27_plasmagun.jpg" { shader "shaders/simsun.fp" }
+material texture "models/weapons/m27/m27_plasmagun2.jpg" { shader "shaders/simsun.fp" }

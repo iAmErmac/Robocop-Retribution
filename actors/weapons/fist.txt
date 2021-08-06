@@ -1,0 +1,29 @@
+
+actor RoboPunch_3D : RoboPunch replaces RoboPunch
+{
+	States
+	{
+	Fire:
+		RPUN ABCDEFG 1
+		"####" # 0 A_JumpIf(GetCVAR("rvw_weapons")==0, 2)
+		"####" H 1 A_CustomPunch (15,0,0,"EnhancedPunchPuff",72,0,0,"ArmorBonus","melee/swing")
+		"####" # 0 A_Jump(256, 2)
+		RPUN H 1 A_CustomPunch (15,0,0,"RoboPunchPuff",72,0,0,"ArmorBonus","robopunch/smack")
+		RPUN EDCB 1
+		goto Ready
+	AltFire:
+		DSPK A 0 A_PlaySound("robospike/out",CHAN_WEAPON)
+		DSPK ABC 3
+		DSPK D 7
+		DSPK EFH 1
+		"####" # 0 A_JumpIf(GetCVAR("rvw_weapons")==0, 2)
+		"####" J 7 A_CustomPunch (100,0,0,"EnhancedSpikePuff",72,0,0,"ArmorBonus","robospike/hit")
+		"####" # 0 A_Jump(256, 2)
+		DSPK J 7 A_CustomPunch (100,0,0,"RoboSpikePuff",72,0,0,"ArmorBonus","robospike/hit")
+		DSPK KLMN 2
+		goto Ready
+	Spawn:
+		RPUN P -1
+		Stop
+	}
+}

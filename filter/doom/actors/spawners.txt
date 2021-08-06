@@ -1,0 +1,27 @@
+
+//Replace doom weapons
+Actor Robo_Buzzsaw: RandomSpawner replaces Chainsaw 2005 { DropItem "Grinder_3D" }
+Actor Robo_Pistol: RandomSpawner replaces Pistol 5010 { DropItem "Auto9_3D" }
+Actor Robo_Shotgun: RandomSpawner replaces Shotgun 2001 { DropItem "RoboShotgun_3D" }
+Actor Robo_SniperRifle: RandomSpawner replaces SuperShotgun 82 { DropItem "CobraAssaultCannon_3D" }
+Actor Robo_Chaingun: RandomSpawner replaces Chaingun 2002 { DropItem "Ed209Gun_3D" }
+Actor Robo_RocketLauncher: RandomSpawner replaces RocketLauncher 2003 { DropItem "MiniMissileShooter_3D" }
+Actor Robo_PlasmaRifle: RandomSpawner replaces PlasmaRifle 2004 { DropItem "M27PlasmaRifle_3D" }
+Actor Robo_PlasmaRifle2: RandomSpawner replaces BFG9000 2006
+{
+	DropItem "M27PlasmaRifle_3D"
+	DropItem "CobraAssaultCannon_3D"
+}
+
+//Replace doom pickups
+
+Actor Robo_HeavyAmmo: RandomSpawner replaces ClipBox 2048
+{
+	DropItem "BoomSlug", 256, 1
+	DropItem "20mmSlug", 256, 3
+}
+Actor Robo_HeavyAmmo2: RandomSpawner replaces ShellBox 2049
+{
+	DropItem "BoomSlug", 256, 3
+	DropItem "20mmSlug", 256, 1
+}

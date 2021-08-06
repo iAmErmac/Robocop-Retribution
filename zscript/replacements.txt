@@ -1,0 +1,145 @@
+
+Class RobocopMonsterReplace: EventHandler
+{
+	override void CheckReplacement(ReplaceEvent e)
+	{
+		if(rvw_robocop_goons)
+		{
+			switch(GetDefaultByType(e.Replacee).GetSpecies())
+			{
+				case 'ZombieMan': e.Replacement = 'BeamHood';  break;
+				case 'ShotgunGuy': e.Replacement = 'ShotgunHood';  break;
+				case 'WolfensteinSS': e.Replacement = 'ShotgunHood';  break;
+				case 'DoomImp': e.Replacement = 'BeamHood';  break;
+				case 'ChaingunGuy': e.Replacement = 'DoubleShotgunner';  break;
+				case 'Demon': e.Replacement = 'Beefcake';  break;
+				case 'Cacodemon': e.Replacement = 'DoubleDrones';  break;
+				case 'LostSoul': e.Replacement = 'Drone';  break;
+				case 'PainElemental': e.Replacement = 'QuadDrones';  break;
+				case 'Arachnotron': e.Replacement = 'Robocop2';  break;
+				case 'BaronOfHell': e.Replacement = 'ED-209';  break;
+				case 'Revenant': e.Replacement = 'OCPSpook';  break;
+				case 'Fatso': e.Replacement = 'DoubleMissileguy';  break;
+				case 'Archvile': e.Replacement = 'RoboBoss1';  break;
+				case 'Cyberdemon': e.Replacement = 'RoboBoss2';  break;
+				case 'SpiderMastermind': e.Replacement = 'ED-260';  break;
+			}
+			
+			//Because these monsters share species with others
+			switch(e.Replacee.GetClassName())
+			{
+				case 'Spectre': e.Replacement = 'DoubleGoons';  break;
+				case 'HellKnight': e.Replacement = 'DoubleTroubles';  break;
+			}
+		}
+	}
+}
+
+Class DoubleGoons: Actor
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0;
+		TNT1 AAAAA 5 A_Warp(AAPTR_DEFAULT, random(-1,1)*40, random(-1,1)*40);
+		TNT1 A 1 A_DropItem("BeamHood");
+		TNT1 AAAAA 5 A_Warp(AAPTR_DEFAULT, random(-1,1)*40, random(-1,1)*40);
+		TNT1 A 1 A_DropItem("Beefcake");
+		Stop;
+	}
+}
+
+Class DoubleTroubles: Actor
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0;
+		TNT1 AAAAA 5 A_Warp(AAPTR_DEFAULT, random(-1,1)*40, random(-1,1)*40);
+		TNT1 A 1 A_DropItem("BeamHood");
+		TNT1 AAAAA 5 A_Warp(AAPTR_DEFAULT, random(-1,1)*40, random(-1,1)*40);
+		TNT1 A 1 A_DropItem("MissileGuy");
+		Stop;
+	}
+}
+
+Class DoubleShotgunner: Actor
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0;
+		TNT1 AAAAA 5 A_Warp(AAPTR_DEFAULT, random(-1,1)*40, random(-1,1)*40);
+		TNT1 A 1 A_DropItem("ShotgunHood");
+		TNT1 AAAAA 5 A_Warp(AAPTR_DEFAULT, random(-1,1)*40, random(-1,1)*40);
+		TNT1 A 1 A_DropItem("ShotgunHood");
+		Stop;
+	}
+}
+
+Class DoubleMissileguy: Actor
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0;
+		TNT1 AAAAA 5 A_Warp(AAPTR_DEFAULT, random(-1,1)*40, random(-1,1)*40);
+		TNT1 A 1 A_DropItem("MissileGuy");
+		TNT1 AAAAA 5 A_Warp(AAPTR_DEFAULT, random(-1,1)*40, random(-1,1)*40);
+		TNT1 A 1 A_DropItem("MissileGuy");
+		Stop;
+	}
+}
+
+Class DoubleDrones: Actor
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0;
+		TNT1 AAAAA 5 A_Warp(AAPTR_DEFAULT, random(-1,1)*40, random(-1,1)*40);
+		TNT1 A 1 A_DropItem("Drone");
+		TNT1 AAAAA 5 A_Warp(AAPTR_DEFAULT, random(-1,1)*40, random(-1,1)*40);
+		TNT1 A 1 A_DropItem("Drone");
+		Stop;
+	}
+}
+
+Class QuadDrones: Actor
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0;
+		TNT1 AAAAA 5 A_Warp(AAPTR_DEFAULT, random(-1,1)*40, random(-1,1)*40);
+		TNT1 A 1 A_DropItem("Drone");
+		TNT1 AAAAA 5 A_Warp(AAPTR_DEFAULT, random(-1,1)*40, random(-1,1)*40);
+		TNT1 A 1 A_DropItem("Drone");
+		TNT1 AAAAA 5 A_Warp(AAPTR_DEFAULT, random(-1,1)*40, random(-1,1)*40);
+		TNT1 A 1 A_DropItem("Drone");
+		TNT1 AAAAA 5 A_Warp(AAPTR_DEFAULT, random(-1,1)*40, random(-1,1)*40);
+		TNT1 A 1 A_DropItem("Drone");
+		Stop;
+	}
+}
+
+Class RoboBoss1: RandomSpawner
+{
+	Default
+	{
+	Dropitem "ClarenceBoddicker";
+	Dropitem "ClarencePipe";
+	Dropitem "JoeCox";
+	Dropitem "Emil";
+	Dropitem "Leon";
+	}
+}
+
+Class RoboBoss2: RandomSpawner
+{
+	Default
+	{
+	Dropitem "VanBoss";
+	Dropitem "Terminator";
+	}
+}

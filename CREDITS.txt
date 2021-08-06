@@ -1,0 +1,21 @@
+Robocop Weapons mod for VR
+
+A GZDoom weapon mod for Doom/Heretic/Chex by Ermac (https://www.reddit.com/user/iAmErmac)
+
+Resource credits:
+=================
+ImpieTwo - for creating Robocop Doom mod
+Sgt Mark IV (Brutal Doom) - for enhanced effect sprites and codes
+Jekyll Grim Payne (Beautiful Doom) - for enhanced effect sprites, sounds, codes
+DBThanatos (D4T) - for glowing bulletcip decal
+Cherno - for SimSun shader
+
+Fist model - https://sketchfab.com/3d-models/robocop-1987-c164d91833e942ffa8d345dfda1b019f
+Grinder - Quake Champions (Gauntlet)
+Omnicorp Auto9 - https://sketchfab.com/3d-models/omnicorp-auto-9-56f0f8a769c040fd83e5fd820b4af719
+KSG Shotgun - https://sketchfab.com/3d-models/ksg-shotgun-lowpoly-pbr-c3cd376635f04a65a4f6cada90e45a23
+Cobra assault cannon - https://sketchfab.com/3d-models/cobra-assault-cannon-1f23069f767c4d2d843982545a85cd0e
+Chaingun - https://sketchfab.com/3d-models/tribes-vengeance-chaingun-9117a751877a48b482fbf86dca8d057e
+M32 grenade launcher - https://sketchfab.com/3d-models/m32-grenade-laucher-f7dea83e9f114de99f2e964572f8d7d7
+Plasma rifle - https://sketchfab.com/3d-models/skynets-plasma-rifle-9ef700d72f624fadab0078ef392544d6
+All 3D models and model textures edited and modified by Ermac

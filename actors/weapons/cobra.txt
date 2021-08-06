@@ -1,0 +1,128 @@
+
+Actor RifleScopeView : Inventory
+{
+	Inventory.maxamount 1
+}
+
+Actor CobraAssaultCannon_3D : CobraAssaultCannon replaces CobraAssaultCannon
+{
+	States
+	{
+	Ready:
+		COBR A 0 A_JumpIfInventory("RifleScopeView", 1, "Ready.Scoped")
+		COBR A 1 A_WeaponReady(WRF_ALLOWZOOM)
+		Loop
+	Ready.Scoped:
+		COBR E 1 A_WeaponReady(WRF_ALLOWZOOM)
+		Loop
+	Deselect:
+		COBR E 0 A_TakeInventory("RifleScopeView", 1)
+		COBR E 0 A_TakeInventory("PowerScopeVision", 1)
+		//COBR E 0 A_SetBlend("00 00 00", 0.0, 1)
+		COBR A 1 A_Lower
+		Loop
+	Fire:
+		COBR A 0 A_JumpIfInventory("RifleScopeView", 1, "Fire.Scoped")
+		COBR B 0 A_PlaySound("cobra/fire")
+		COBR B 0 A_GunFlash
+		COBR B 0 A_FireCustomMissile ("Cobraplayerball", 0)
+		COBR B 4 A_Recoil(5)
+		COBR CD 9
+		COBR A 3 A_ReFire
+		"####" # 0 A_JumpIf(GetCVAR("rvw_weapons")==0, "Ready")
+		"####" # 0 A_FireProjectile("RifleBarrelSmoke",0,0,0,0,FPF_NOAUTOAIM,0)
+		goto Ready
+	Fire.Scoped:
+		COBR F 0 A_PlaySound("cobra/fire")
+		COBR F 0 A_GunFlash
+		COBR F 0 A_FireCustomMissile ("Cobraplayerball", 0)
+		COBR F 4 A_Recoil(5)
+		COBR GH 9
+		COBR E 3 A_ReFire
+		"####" # 0 A_JumpIf(GetCVAR("rvw_weapons")==0, "Ready.Scoped")
+		"####" # 0 A_FireProjectile("RifleBarrelSmoke",0,0,0,0,FPF_NOAUTOAIM,0)
+		goto Ready.Scoped
+	Zoom:
+		COBR E 0 A_JumpIfInventory("RifleScopeView", 1, "RemoveScopeHud")
+		COBR E 0 A_GiveInventory("RifleScopeVisor", 1)
+		COBR E 10 A_GiveInventory("RifleScopeView", 1)
+		COBR E 0 A_Overlay(1001, "Roboscope")
+		//COBR E 0 A_SetBlend("00 80 20", 0.3, 999999)
+		Goto Ready.Scoped
+	RemoveScopeHud:
+		COBR E 10 A_TakeInventory("RifleScopeView", 99)
+		COBR E 0 A_TakeInventory("PowerScopeVision", 1)
+		//COBR E 0 A_SetBlend("00 00 00", 0.0, 1)
+		Goto Ready
+	Flash:
+		TNT1 A 0 A_JumpIf(GetCVAR("rvw_weapons_mf")==true, "MuzzleFlash")
+		TNT1 A 4 Bright A_Light2
+		TNT1 A 2 Bright A_Light1
+		TNT1 A 2 A_Light0
+		Stop
+	MuzzleFlash:
+		CRMF A 4 Bright A_Light2
+		TNT1 A 2 Bright A_Light1
+		TNT1 A 2 A_Light0
+		Stop
+	Roboscope:
+		COBS ABCDEFGHIJ 2
+		COBS A 0 A_JumpIfInventory("RifleScopeView", 1, "Roboscope")
+		stop
+	Spawn:
+		COBR P 0 A_JumpIf(GetCVAR("rvw_pickupmodel")==1, "Spawn3D")
+		COBR P 1
+		loop
+	Spawn3D:
+		CBRP A 0 A_JumpIf(GetCVAR("rvw_pickupmodel")==0, "Spawn")
+		CBRP A 1 Bright
+		loop
+	}
+}
+
+ACTOR CobraBullet: CobraBall replaces CobraBall {
+	scale 0.4
+	States
+	{
+	Spawn:
+		CBUL A 2 Bright
+		Loop
+	Death:
+		TNT1 A 0 A_SetScale(0.7)
+		TNT1 A 0 A_JumpIf(GetCVAR("rvw_weapons")==1, "Death.Enhanced")
+		MISL BC 5 Bright A_Explode
+		MISL D 5 Bright
+		Stop
+	Death.Enhanced:
+		BOM2 A 1 bright A_Explode
+		TNT1 AAA 0 A_CustomMissile ("MiniExplosionParticleSpawner", 2, 0, random (0, 360), 2, random (0, 360))
+		BOM2 BCDEFGHIJKLMNOPQRSTUVWXY 1 Bright
+		Stop
+	}
+}
+ACTOR PlayerCobraBullet: CobraBullet replaces CobraPlayerBall
+{
+	Speed 100
+	scale 0.3
+}
+
+ACTOR RifleScopeVisor : PowerupGiver
+{
+  +COUNTITEM
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.ALWAYSPICKUP
+  Inventory.MaxAmount 0
+  Powerup.Type "ScopeVision"
+  States
+  {
+  Spawn:
+    PVIS A 6 Bright
+    PVIS B 6
+    Loop
+  }
+}
+
+ACTOR PowerScopeVision : PowerLightAmp
+{
+  Powerup.Duration 0x7FFFFFFF //infinite duration
+}

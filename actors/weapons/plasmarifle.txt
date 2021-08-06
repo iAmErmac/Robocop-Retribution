@@ -1,0 +1,77 @@
+
+actor M27PlasmaRifle_3D : M27PlasmaRifle replaces M27PlasmaRifle
+{
+	States
+	{
+	Fire:
+		PLMR # 0 A_JumpIf(GetCVAR("rvw_weapons")==0, 4)
+		PLMR A 2 Bright A_FireCustomMissile("EnPlasmaBolt")
+		"####" # 0 A_FireProjectile("PlasmaBarrelSmoke",0,0,0,0,FPF_NOAUTOAIM,0)
+		"####" # 0 A_Jump(256, 2)
+		PLMR A 2 Bright A_FireCustomMissile("PlasmaBolt")
+		PLMR A 0 A_GunFlash
+		PLMR B 2
+		PLMR C 2
+		"####" # 0 A_GiveInventory("PlasmaGunOverheatFlag")
+		PLMR A 1 A_ReFire
+		"####" # 0 A_JumpIf(GetCVAR("rvw_weapons")==0, "ready")
+		"####" # 1 A_Overlay(1001, "Gunsmoke")
+		Goto Ready
+	Flash:
+		TNT1 A 0 A_JumpIf(GetCVAR("rvw_weapons_mf")==true, "MuzzleFlash")
+		TNT1 A 2 Bright A_Light2
+		TNT1 A 2 Bright A_Light1
+		TNT1 A 1 A_Light0
+		Stop
+	MuzzleFlash:
+		PLMF A 2 Bright A_Light2
+		PLMF B 2 Bright A_Light1
+		TNT1 A 1 A_Light0
+		Stop
+	Gunsmoke:
+		TNT1 A 0 A_JumpIfInventory("PlasmaGunOverheatFlag", 30, "Gunsmoke")
+		Stop
+	BarrelSmoke:
+		TNT1 A 0 A_TakeInventory("PlasmaGunOverheatFlag", 99)
+		"####" AAAAAAAAAAAAAAA 1 A_FireProjectile("PlasmaBarrelSmoke2",0,0,0,0,FPF_NOAUTOAIM,0)
+		"####" AAAAAAAA 1 A_FireProjectile("PlasmaBarrelSmoke3",0,0,0,0,FPF_NOAUTOAIM,0)
+		"####" AAA 1 A_FireProjectile("PlasmaBarrelSmoke4",0,0,0,0,FPF_NOAUTOAIM,0)
+		Stop
+	Spawn:
+		PRPK A 0 A_JumpIf(GetCVAR("rvw_pickupmodel")==1, "Spawn3D")
+		PRPK A 1
+		Loop
+	Spawn3D:
+		PLMP A 0 A_JumpIf(GetCVAR("rvw_pickupmodel")==0, "Spawn")
+		PLMP A 1 Bright
+		Loop
+	}
+}
+
+Actor PlasmaGunOverheatFlag: Inventory //to show decorative barrel smokes
+{
+	Inventory.maxamount 30
+}
+
+ACTOR EnPlasmaBolt : PlasmaBolt
+{
+	decal PlasmaBoltSplat
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_PlaySound("weapons/plasma/fire")
+		TNT1 A 0 A_SetScale(scalex*randompick(-1,1),scaley*randompick(-1,1))
+		TNT1 A 0 A_SpawnItemEx("RedFlarePlasma",0,0,0,velx,vely,velz,0,SXF_SETMASTER|SXF_ORIGINATOR|SXF_ABSOLUTEVELOCITY)
+		PURF A 1 bright
+		goto spawn+4
+	Death:
+		TNT1 A 0 A_RemoveChildren(1,RMVF_EVERYTHING)
+		TNT1 AAAAAAAAAAAA 0 A_SpawnProjectile("RedPlasmaPiece",0,0,random(-360,360),2,random(-50,50))
+		TNT1 AAAAAA 0 A_SpawnProjectile("RedPlasmaShred",0,0,random(-360,360),2,random(-90,90))
+		TNT1 A 0 bright A_SpawnItem("WeaponSmoke")
+	Explosion:
+		PULE ABCDE 4 Bright
+		stop
+	}
+}

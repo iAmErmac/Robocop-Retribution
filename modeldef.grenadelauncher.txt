@@ -1,0 +1,255 @@
+
+Model MiniMissileShooter_3D
+{
+   Path "models/weapons/m32"
+   Model 0 "m32.md3"
+   SurfaceSkin 0 0 "m32_tex1.png"
+   SurfaceSkin 0 1 "m32_tex2.png"
+   SurfaceSkin 0 2 "m32_tex1.png"
+   SurfaceSkin 0 3 "m32_tex1.png"
+   SurfaceSkin 0 4 "m32_tex2.png"
+   SurfaceSkin 0 5 "m32_tex2.png"
+   SurfaceSkin 0 6 "m32_tex1.png"
+   SurfaceSkin 0 7 "m32_tex2.png"
+   SurfaceSkin 0 8 "m32_tex1.png"
+   Scale -0.62 0.62 0.62
+   Offset 0.0 -30.0 -8.0
+   
+   NOINTERPOLATION
+   
+   //Ready
+   FrameIndex MMIS A 0 0
+}
+
+//Fire anim 1
+Model MiniMissileShooter_3D
+{
+   Path "models/weapons/m32"
+   Model 0 "m32.md3"
+   SurfaceSkin 0 0 "m32_tex1.png"
+   SurfaceSkin 0 1 "m32_tex2.png"
+   SurfaceSkin 0 2 "m32_tex1.png"
+   SurfaceSkin 0 3 "m32_tex1.png"
+   SurfaceSkin 0 4 "m32_tex2.png"
+   SurfaceSkin 0 5 "m32_tex2.png"
+   SurfaceSkin 0 6 "m32_tex1.png"
+   SurfaceSkin 0 7 "m32_tex2.png"
+   SurfaceSkin 0 8 "m32_tex1.png"
+   Scale -0.62 0.62 0.62
+   Offset 0.0 -30.0 -8.0
+   
+   //Fire
+   FrameIndex MMIS B 0 1
+   
+   //Magazine spin
+   FrameIndex MMIS C 0 2
+   FrameIndex MMIS D 0 3
+   FrameIndex MMIS E 0 4
+   FrameIndex MMIS F 0 5
+   FrameIndex MMIS G 0 6
+}
+
+//Fire anim 2
+Model MiniMissileShooter_3D
+{
+   Path "models/weapons/m32"
+   Model 0 "m32.md3"
+   SurfaceSkin 0 0 "m32_tex1.png"
+   SurfaceSkin 0 1 "m32_tex2.png"
+   SurfaceSkin 0 2 "m32_tex1.png"
+   SurfaceSkin 0 3 "m32_tex1.png"
+   SurfaceSkin 0 4 "m32_tex2.png"
+   SurfaceSkin 0 5 "m32_tex2.png"
+   SurfaceSkin 0 6 "m32_tex1.png"
+   SurfaceSkin 0 7 "m32_tex2.png"
+   SurfaceSkin 0 8 "m32_tex1.png"
+   Scale -0.62 0.62 0.62
+   Offset 0.0 -30.0 -8.0
+   
+   //Ready
+   FrameIndex MMS2 A 0 6
+   
+   //Fire
+   FrameIndex MMS2 B 0 7
+   
+   //Magazine spin
+   FrameIndex MMS2 C 0 8
+   FrameIndex MMS2 D 0 9
+   FrameIndex MMS2 E 0 10
+   FrameIndex MMS2 F 0 11
+   FrameIndex MMS2 G 0 12
+}
+
+//Fire anim 3
+Model MiniMissileShooter_3D
+{
+   Path "models/weapons/m32"
+   Model 0 "m32.md3"
+   SurfaceSkin 0 0 "m32_tex1.png"
+   SurfaceSkin 0 1 "m32_tex2.png"
+   SurfaceSkin 0 2 "m32_tex1.png"
+   SurfaceSkin 0 3 "m32_tex1.png"
+   SurfaceSkin 0 4 "m32_tex2.png"
+   SurfaceSkin 0 5 "m32_tex2.png"
+   SurfaceSkin 0 6 "m32_tex1.png"
+   SurfaceSkin 0 7 "m32_tex2.png"
+   SurfaceSkin 0 8 "m32_tex1.png"
+   Scale -0.62 0.62 0.62
+   Offset 0.0 -30.0 -8.0
+   
+   //Ready
+   FrameIndex MMS3 A 0 12
+   
+   //Fire
+   FrameIndex MMS3 B 0 13
+   
+   //Magazine spin
+   FrameIndex MMS3 C 0 14
+   FrameIndex MMS3 D 0 15
+   FrameIndex MMS3 E 0 16
+   FrameIndex MMS3 F 0 17
+   FrameIndex MMS3 G 0 18
+}
+
+//Fire anim 4
+Model MiniMissileShooter_3D
+{
+   Path "models/weapons/m32"
+   Model 0 "m32.md3"
+   SurfaceSkin 0 0 "m32_tex1.png"
+   SurfaceSkin 0 1 "m32_tex2.png"
+   SurfaceSkin 0 2 "m32_tex1.png"
+   SurfaceSkin 0 3 "m32_tex1.png"
+   SurfaceSkin 0 4 "m32_tex2.png"
+   SurfaceSkin 0 5 "m32_tex2.png"
+   SurfaceSkin 0 6 "m32_tex1.png"
+   SurfaceSkin 0 7 "m32_tex2.png"
+   SurfaceSkin 0 8 "m32_tex1.png"
+   Scale -0.62 0.62 0.62
+   Offset 0.0 -30.0 -8.0
+   
+   //Ready
+   FrameIndex MMS4 A 0 18
+   
+   //Fire
+   FrameIndex MMS4 B 0 19
+   
+   //Magazine spin
+   FrameIndex MMS4 C 0 20
+   FrameIndex MMS4 D 0 21
+   FrameIndex MMS4 E 0 22
+   FrameIndex MMS4 F 0 23
+   FrameIndex MMS4 G 0 24
+}
+
+//Fire anim 5
+Model MiniMissileShooter_3D
+{
+   Path "models/weapons/m32"
+   Model 0 "m32.md3"
+   SurfaceSkin 0 0 "m32_tex1.png"
+   SurfaceSkin 0 1 "m32_tex2.png"
+   SurfaceSkin 0 2 "m32_tex1.png"
+   SurfaceSkin 0 3 "m32_tex1.png"
+   SurfaceSkin 0 4 "m32_tex2.png"
+   SurfaceSkin 0 5 "m32_tex2.png"
+   SurfaceSkin 0 6 "m32_tex1.png"
+   SurfaceSkin 0 7 "m32_tex2.png"
+   SurfaceSkin 0 8 "m32_tex1.png"
+   Scale -0.62 0.62 0.62
+   Offset 0.0 -30.0 -8.0
+   
+   //Ready
+   FrameIndex MMS5 A 0 24
+   
+   //Fire
+   FrameIndex MMS5 B 0 25
+   
+   //Magazine spin
+   FrameIndex MMS5 C 0 26
+   FrameIndex MMS5 D 0 27
+   FrameIndex MMS5 E 0 28
+   FrameIndex MMS5 F 0 29
+   FrameIndex MMS5 G 0 30
+}
+
+//Fire anim 6
+Model MiniMissileShooter_3D
+{
+   Path "models/weapons/m32"
+   Model 0 "m32.md3"
+   SurfaceSkin 0 0 "m32_tex1.png"
+   SurfaceSkin 0 1 "m32_tex2.png"
+   SurfaceSkin 0 2 "m32_tex1.png"
+   SurfaceSkin 0 3 "m32_tex1.png"
+   SurfaceSkin 0 4 "m32_tex2.png"
+   SurfaceSkin 0 5 "m32_tex2.png"
+   SurfaceSkin 0 6 "m32_tex1.png"
+   SurfaceSkin 0 7 "m32_tex2.png"
+   SurfaceSkin 0 8 "m32_tex1.png"
+   Scale -0.62 0.62 0.62
+   Offset 0.0 -30.0 -8.0
+   
+   //Ready
+   FrameIndex MMS6 A 0 30
+   
+   //Fire
+   FrameIndex MMS6 B 0 31
+   
+   //Magazine spin
+   FrameIndex MMS6 C 0 32
+   FrameIndex MMS6 D 0 33
+   FrameIndex MMS6 E 0 34
+   FrameIndex MMS6 F 0 35
+}
+
+//Fire anim 6
+Model MiniMissileShooter_3D
+{
+   Path "models/weapons/m32"
+   Model 0 "m32.md3"
+   SurfaceSkin 0 0 "m32_tex1.png"
+   SurfaceSkin 0 1 "m32_tex2.png"
+   SurfaceSkin 0 2 "m32_tex1.png"
+   SurfaceSkin 0 3 "m32_tex1.png"
+   SurfaceSkin 0 4 "m32_tex2.png"
+   SurfaceSkin 0 5 "m32_tex2.png"
+   SurfaceSkin 0 6 "m32_tex1.png"
+   SurfaceSkin 0 7 "m32_tex2.png"
+   SurfaceSkin 0 8 "m32_tex1.png"
+   Scale -0.62 0.62 0.62
+   Offset 0.0 -30.0 -8.0
+   
+   NOINTERPOLATION
+   
+   FrameIndex MMS6 G 0 36
+}
+
+//Muzzle flash
+Model MiniMissileShooter_3D
+{
+   Path "models/weapons/m32"
+   Model 0 "grenade_mf.md3"
+   Skin 0 "grenade_mf.png"
+   Scale -0.62 0.62 0.62
+   Offset 0.0 -30.0 -5.0
+   
+   FrameIndex MMMF A 0 1
+}
+
+//Pickup model
+Model MiniMissileShooter_3D
+{
+   Path "models/weapons/m32"
+   Model 0 "m32_pickup.md3"
+   SurfaceSkin 0 0 "m32_tex1.png"
+   SurfaceSkin 0 1 "m32_tex2.png"
+   Scale 0.25 0.25 0.25
+   Offset 0.0 0.0 0.0
+   
+   ROTATING
+   ROTATION-SPEED 0.2
+   
+   //Ready
+   FrameIndex MMSP A 0 0
+}
