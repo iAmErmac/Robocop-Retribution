@@ -9,6 +9,7 @@ Sgt Mark IV (Brutal Doom) - for enhanced effect sprites and codes
 Jekyll Grim Payne (Beautiful Doom) - for enhanced effect sprites, sounds, codes
 DBThanatos (D4T) - for glowing bulletcip decal
 Cherno - for SimSun shader
+M8f - for some zscript codes
 
 Fist model - https://sketchfab.com/3d-models/robocop-1987-c164d91833e942ffa8d345dfda1b019f
 Grinder - Quake Champions (Gauntlet)
