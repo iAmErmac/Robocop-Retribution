@@ -2,6 +2,7 @@ AddOptionMenu "OptionsMenu"
 {
 	StaticText " "
 	Submenu "Robocop VR Settings", "RVRW_Settings"
+	Submenu "SuperHuman abilities", "RVRW_SH_Settings"
 }
 
 OptionMenu "RVRW_Settings" {
@@ -19,6 +20,35 @@ OptionMenu "RVRW_Settings" {
 	Option "Replace monsters with Goons", "rvw_robocop_goons", "OnOff"
 	StaticText "*Requires a map restart", "Grey"
 	}
+}
+
+OptionMenu "RVRW_SH_Settings" {
+	Title "SuperHuman abilities"
+	StaticText " "
+	
+	Slider "Weapon Damage Multiplier", "rvw_damage_mult", "1.0", "10.0", "0.5"
+	Slider "Jump Strength", "rvw_jump_mult", "1.0", "5.0", "0.5"
+	Slider "Sprint speed", "rvw_speed_mult", "0.5", "3.0", "0.5"
+	StaticText " "
+	StaticText "Health regenration", "Gold"
+	Option "Auto regenrate health", "rvw_health_regen", "OnOff"
+	Option "Critical health regeneration only", "rvw_critical_heal", "OnOff", "rvw_health_regen"
+	StaticText "With this option enabled health will be regenrated up to 30 points only", "DarkGrey"
+	Slider "Regenration interval (in sec)", "rvw_regen_time", "0.5", "10.0", "0.5", "1", "rvw_health_regen"
+	StaticText " "
+	StaticText "Forward dash", "Gold"
+	Control "Dash move", "netevent \"sh_dash\""
+	Option "Double dash", "rvw_double_dash", "OnOff"
+	Slider "Dash distance", "rvw_dash_mult", "0.5", "3.0", "0.5"
+	Slider "Dash cooldown (sec)", "rvw_dash_cooldown", "0", "5.0", "0.5"
+	StaticText " "
+	StaticText "Double jumping", "Gold"
+	StaticText "Jump higher when pressing jump button twice", "DarkGrey"
+	Option "Double jump", "rvw_double_jump", "OnOff"
+	StaticText " "
+	StaticText "Ledge climbing", "Gold"
+	StaticText "Hold jump near a ledge to start climbing", "DarkGrey"
+	Option "Ledge climb", "rvw_ledge_climb", "OnOff"
 }
 
 OptionValue "VR_Weapons_Option" {

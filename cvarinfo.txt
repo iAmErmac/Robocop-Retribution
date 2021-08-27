@@ -3,3 +3,15 @@ server int rvw_pickupmodel = 0;
 server bool rvw_tracers = true;
 server bool rvw_weapons_mf = true;
 server bool rvw_robocop_goons = false;
+
+server float rvw_damage_mult = 1.0;
+server float rvw_jump_mult = 1.0;
+server float rvw_speed_mult = 1.0;
+server float rvw_dash_mult = 0.5;
+server float rvw_dash_cooldown = 1.0;
+server bool rvw_double_dash = false;
+server bool rvw_double_jump = false;
+server bool rvw_ledge_climb = false;
+server bool rvw_health_regen = false;
+server bool rvw_critical_heal = true;
+server float rvw_regen_time = 5;

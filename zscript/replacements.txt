@@ -1,4 +1,22 @@
 
+Class RobocopWeaponReplace: EventHandler
+{
+	override void CheckReplacement(ReplaceEvent e)
+	{
+		switch(GetDefaultByType(e.Replacee).GetSpecies())
+		{
+			case 'Pistol': e.Replacement = 'Auto9_3D';  break;
+			case 'Shotgun': e.Replacement = 'RoboShotgun_3D';  break;
+			case 'SuperShotgun': e.Replacement = 'CobraAssaultCannon_3D';  break;
+			case 'Chainsaw': e.Replacement = 'Grinder_3D';  break;
+			case 'Chaingun': e.Replacement = 'Ed209Gun_3D';  break;
+			case 'RocketLauncher': e.Replacement = 'MiniMissileShooter_3D';  break;
+			case 'PlasmaRifle': e.Replacement = 'M27PlasmaRifle_3D';  break;
+			case 'BFG9000': e.Replacement = 'M27PlasmaRifle_3D';  break;
+		}
+	}
+}
+
 Class RobocopMonsterReplace: EventHandler
 {
 	override void CheckReplacement(ReplaceEvent e)
