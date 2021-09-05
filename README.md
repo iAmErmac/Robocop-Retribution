@@ -1,8 +1,12 @@
 # Robocop Weapons mod for VR
 
+![Robocop Doom](https://i.imgur.com/jlmmlg1.jpg)
+
 A GZDoom weapon mod for Doom/Heretic/Chex by Ermac (https://www.reddit.com/user/iAmErmac)
 
 This is a 3D weapon mod to use with Robocop Doom mod (GZDoom VR). By design, this mod should allow using Robocop mod weapons with other map-packs and gameplay mods in Doom/Heretic/Chex-Quest as well. Optionally You can replace Doom/Chex monsters with the mobs from Robocop mod (works for repplacing custom monsters as well).
+
+To download the Robocop Doom VR mod click the download button below:
 
 [![Download Now](https://raster.shields.io/github/downloads/iAmErmac/Robocop-Doom-VR-Weapons/total)](https://github.com/iAmErmac/Robocop-Doom-VR-Weapons/releases/latest)
 
@@ -11,13 +15,15 @@ This is a 3D weapon mod to use with Robocop Doom mod (GZDoom VR). By design, thi
 ## Features
 * 3D Weapon models
 * Cross-wad support, can be used with other supported iwad
-* Cobra assault cannon features a holo-sight now. Press the 'Zoom' button to activate/deactivate the holo-sight
+* Cobra assault cannon features a holo-sight now. Bind 'Zoom' button in configuration and then activate zoom to toggle the holo-sight on/off
 * Replace monsters from Doom/Chex with robocop mobs
 * Enhanced projectiles, decals, smoke effects on Enhanced weapon mode
 
 ## Installation
 
-GZDoom VR: https://github.com/hh79/gz3doom/releases
+### GZDoom VR (PC-VR)
+
+Latest GZDoom VR: https://github.com/hh79/gz3doom/releases
 
 To install:
 
@@ -26,7 +32,20 @@ To install:
     Copy this mod into the folder.
     Run with gzdoomvr.exe -iwad doom2.wad -file robocop.pk3 LATEST_MOD_FILE_NAME
   
-OR use ZDL: https://github.com/lcferrum/qzdl/releases to load mods with GZDoom
+OR use DoomRunner: https://github.com/Youda008/DoomRunner/releases/ to load mods with GZDoom
+
+### QuestZDoom (Oculus Quest)
+
+Official QuestZDoom: https://github.com/DrBeef/QuestZDoom/releases/latest
+Unofficial QuestZDoom (For more bugfixes and updates): https://github.com/emawind84/QuestZDoom/releases/latest
+
+QuestZDoom launcher: https://github.com/baggyg/QuestZDoomLauncher/releases/latest
+
+To install:
+
+    Copy ww-cola3-v2.5.pk3 and Cola 3 VR weapons mod into /sdcard/QuestZDoom/mods/
+    Load QuestZDoom Launcher. select the mods in following order and launch QuestZDoom:
+	Doom 2 + Cola 3 + Cola 3 VR weapons
 
 ## Wad and mod support:
 
