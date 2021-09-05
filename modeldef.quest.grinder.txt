@@ -1,0 +1,93 @@
+
+//Ready
+Model Grinder_3D
+{
+   Path "models/weapons/chainsaw"
+   Model 0 "chainsaw.md3"
+   Skin 0 "chainsaw.png"
+   Scale -0.85 0.85 0.85
+   Offset 0.0 -25.0 -7.0
+   
+   FrameIndex HSAW A 0 0
+   FrameIndex HSAW B 0 1
+   FrameIndex HSAW C 0 2
+   FrameIndex HSAW D 0 3
+   FrameIndex HSAW E 0 4
+   FrameIndex HSAW F 0 5
+   FrameIndex HSAW G 0 6
+   FrameIndex HSAW H 0 7
+   FrameIndex HSAW I 0 8
+   FrameIndex HSAW J 0 9
+   FrameIndex HSAW K 0 10
+   FrameIndex HSW2 A 0 11
+   FrameIndex HSW2 B 0 12
+   FrameIndex HSW2 C 0 13
+   FrameIndex HSW2 D 0 14
+   FrameIndex HSW2 E 0 15
+   FrameIndex HSW2 F 0 16
+   FrameIndex HSW2 G 0 17
+   FrameIndex HSW2 H 0 18
+   FrameIndex HSW2 I 0 19
+   FrameIndex HSW2 J 0 20
+   FrameIndex HSW2 K 0 21
+   FrameIndex HSW2 L 0 22
+   FrameIndex HSW2 M 0 23
+   FrameIndex HSW2 N 0 24
+   FrameIndex HSW2 O 0 25
+   FrameIndex HSW2 P 0 26
+   FrameIndex HSW2 Q 0 27
+   FrameIndex HSW2 R 0 28
+   FrameIndex HSW2 S 0 29
+   FrameIndex HSW2 T 0 30
+   FrameIndex HSW2 U 0 31
+   FrameIndex HSW2 V 0 32
+   FrameIndex HSW2 W 0 33
+   FrameIndex HSW2 X 0 34
+   FrameIndex HSW2 Y 0 35
+   FrameIndex HSW2 Z 0 36
+}
+
+//Fire
+Model Grinder_3D
+{
+   Path "models/weapons/chainsaw"
+   Model 0 "chainsaw.md3"
+   Skin 0 "chainsaw.png"
+   Scale -0.85 0.85 0.85
+   Offset 0.0 -25.0 -7.0
+   
+   FrameIndex HSWA A 0 37
+   FrameIndex HSWA B 0 38
+   FrameIndex HSWA C 0 39
+   FrameIndex HSWA D 0 40
+}
+
+//Hold
+Model Grinder_3D
+{
+   Path "models/weapons/chainsaw"
+   Model 0 "chainsaw.md3"
+   Skin 0 "chainsaw.png"
+   Scale -0.85 0.85 0.85
+   Offset 0.0 -25.0 -7.0
+   
+   FrameIndex HSWA E 0 41
+   FrameIndex HSWA F 0 42
+   FrameIndex HSWA G 0 43
+   FrameIndex HSWA H 0 44
+}
+
+//Pickup model
+Model Grinder_3D
+{
+   Path "models/weapons/chainsaw"
+   Model 0 "chainsaw_pickup.md3"
+   Skin 0 "chainsaw.png"
+   Scale 0.6 0.6 0.6
+   Offset 0.0 0.0 0.0
+   
+   ROTATING
+   ROTATION-SPEED 0.2
+   
+   FrameIndex HSWP A 0 0
+}
