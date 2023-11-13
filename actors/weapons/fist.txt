@@ -1,8 +1,27 @@
 
-actor RoboPunch_3D : RoboPunch replaces RoboPunch
+actor RoboPunch : Weapon replaces Fist
 {
+	Weapon.SelectionOrder 2600
+	Weapon.Kickback 10
+	+WEAPON.WIMPY_WEAPON
+	+WEAPON.MELEEWEAPON
+	+NOEXTREMEDEATH
+	+NOALERT
+	+inventory.undroppable
+	Obituary "%o was apprehended."
+	Weapon.SlotNumber 1
+  
 	States
 	{
+	Ready:
+		RPUN R 1 A_WeaponReady
+		loop
+	Deselect:
+		RPUN R 1 A_Lower
+		loop
+	Select: 
+		RPUN R 1 A_Raise
+		loop
 	Fire:
 		RPUN ABCDEFG 1
 		"####" # 0 A_JumpIf(GetCVAR("rvw_weapons")==0, 2)
@@ -26,4 +45,41 @@ actor RoboPunch_3D : RoboPunch replaces RoboPunch
 		RPUN P -1
 		Stop
 	}
+}
+
+ACTOR RoboPunchPuff
+{
+  +NOBLOCKMAP
+  +NOGRAVITY
+  +NOEXTREMEDEATH
+  +PUFFONACTORS
+  +NODECAL
+  RenderStyle Translucent
+  Alpha 0.6
+  VSpeed 1
+  States
+  {
+  Spawn:
+    PUFF ABCD 4
+    Stop
+  }
+}
+
+ACTOR RoboSpikePuff
+{
+  +NOBLOCKMAP
+  +NOGRAVITY
+  +NOEXTREMEDEATH
+  +PUFFONACTORS
+  +NODECAL
+  RenderStyle Translucent
+  Alpha 0.6
+  VSpeed 1
+  DamageType "SpikeStab"
+  States
+  {
+  Spawn:
+    PUFF ABCD 4
+    Stop
+  }
 }

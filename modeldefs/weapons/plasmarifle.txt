@@ -1,0 +1,62 @@
+
+Model M27PlasmaRifle
+{
+   Path "models/weapons/m27"
+   Model 0 "m27_rifle.md3"
+   SurfaceSkin 0 0 "m27_plasmagun.png"
+   SurfaceSkin 0 1 "m27_plasmagun2.png"
+   SurfaceSkin 0 2 "m27_plasmagun.png"
+   SurfaceSkin 0 3 "m27_plasmagun.png"
+   SurfaceSkin 0 4 "m27_plasmagun.png"
+   SurfaceSkin 0 5 "m27_plasmagun2.png"
+   SurfaceSkin 0 6 "m27_plasmagun2.png"
+   SurfaceSkin 0 7 "m27_plasmagun2.png"
+   SurfaceSkin 0 8 "m27_plasmagun.png"
+   Scale -0.9 0.9 0.9
+   Offset 0.0 -30.0 -8.0
+   
+   //Ready
+   FrameIndex PLMR A 0 0
+   
+   //Fire
+   FrameIndex PLMR B 0 1
+   FrameIndex PLMR C 0 1
+}
+
+//Muzzle flash
+Model M27PlasmaRifle
+{
+   Path "models/weapons/m27"
+   Model 0 "plasma_mf.md3"
+   Skin 0 "plasma_mf.png"
+   Scale -0.9 0.9 0.9
+   Offset 0.0 -30.0 -8.0
+   
+   FrameIndex PLMF A 0 0
+   Skin 0 "plasma_mf2.png"
+   FrameIndex PLMF B 0 0
+}
+
+
+Model M27PlasmaRifle
+{
+   Path "models/weapons/m27"
+   Model 0 "m27_pickup.md3"
+   SurfaceSkin 0 0 "m27_plasmagun.png"
+   SurfaceSkin 0 1 "m27_plasmagun2.png"
+   SurfaceSkin 0 2 "m27_plasmagun.png"
+   SurfaceSkin 0 3 "m27_plasmagun.png"
+   SurfaceSkin 0 4 "m27_plasmagun.png"
+   SurfaceSkin 0 5 "m27_plasmagun2.png"
+   SurfaceSkin 0 6 "m27_plasmagun2.png"
+   SurfaceSkin 0 7 "m27_plasmagun2.png"
+   SurfaceSkin 0 8 "m27_plasmagun.png"
+   Scale 0.5 0.5 0.5
+   Offset 0.0 0.0 0.0
+   
+   ROTATING
+   ROTATION-SPEED 0.2
+   
+   //Ready
+   FrameIndex PLMP A 0 0
+}

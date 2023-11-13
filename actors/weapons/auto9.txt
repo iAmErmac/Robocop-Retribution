@@ -1,8 +1,27 @@
 
-Actor Auto9_3D: Auto9 replaces Auto9
+ACTOR Auto9 : weapon replaces Pistol 12325
 {
+	//$Category RoboGuns
+	Weapon.SelectionOrder 1
+	Weapon.Ammotype "clip"
+	Weapon.Ammouse 1
+	Weapon.Ammogive 25
+	Weapon.SlotNumber 2
+	Weapon.Upsound "auto9/deploy"
+	decal BulletChip
+	Inventory.Pickupmessage "Robocop Auto-9!"
+
 	States
 	{
+	Ready:
+		AUT9 A 1 A_WeaponReady
+		loop
+	Select:
+		AUT9 A 1 A_RAISE
+		Loop
+	Deselect:
+		AUT9 A 1 A_Lower
+		Loop
 	Fire:
 		NULL A 0 A_GunFlash
 		AUT9 B 0 Bright A_PlaySound("auto9/fire")
@@ -72,4 +91,13 @@ Actor Auto9_3D: Auto9 replaces Auto9
 		AUTP A 1 Bright
 		loop
 	}
+}
+
+ACTOR Auto9Clip : Clip replaces Clip
+{
+  Inventory.PickupMessage "Picked up 9mm bullets."
+  Inventory.Amount 18
+  Inventory.MaxAmount 300
+  Ammo.BackpackAmount 18
+  Ammo.BackpackMaxAmount 600
 }

@@ -1,1 +1,1 @@
-#include "GLDEFS/ModelShading.txt"
+#include "gldefs/weapons.txt"

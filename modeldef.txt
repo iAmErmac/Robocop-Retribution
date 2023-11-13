@@ -1,0 +1,10 @@
+
+#include "modeldefs/weapons/fist.txt"
+#include "modeldefs/weapons/grinder.txt"
+#include "modeldefs/weapons/pistol.txt"
+#include "modeldefs/weapons/shotgun.txt"
+#include "modeldefs/weapons/chaingun.txt"
+#include "modeldefs/weapons/rifle.txt"
+#include "modeldefs/weapons/grenadelauncher.txt"
+#include "modeldefs/weapons/plasmarifle.txt"
+#include "modeldefs/tracer.txt"

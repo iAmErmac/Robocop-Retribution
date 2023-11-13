@@ -1,5 +1,480 @@
 Gameinfo
 {
-	Playerclasses = "NewRoboPlayer"
-	EventHandlers = "RobocopWeaponReplace", "RobocopMonsterReplace", "PlayerPropModifier", "SuperHumanMovesHandler"
+	Playerclasses = "RoboPlayer"
+	titlemusic = "ROBOTITL"
+	intermissionmusic = "ROBOINTR"
+	EventHandlers = "XGoreHandler", "RobocopWeaponReplace", "RobocopMonsterReplace", "PlayerPropModifier", "SuperHumanMovesHandler"
+}
+
+clearskills
+clearepisodes
+defaultmap {clipmidtextures}
+
+// Skill Settings
+skill Rookie
+{
+   AmmoFactor = 2
+   DamageFactor = 0.5
+   SpawnFilter = Baby
+   Name = "Rookie"
+   Key = "r"
+}
+
+Skill BeatCop
+{
+	AmmoFactor = 2
+	SpawnFilter = Easy
+	Name = "Beat Cop"
+	Key = "b"
+}
+
+Skill Detective
+{
+	SpawnFilter = Normal
+	Name = "Detective"
+	Key = "d"
+}
+
+Skill LooseCannon
+{
+	SpawnFilter = Hard
+	Name = "Loose Cannon"
+	Key = "l"
+}
+
+Skill Dollar
+{
+	AmmoFactor = 2
+	FastMonsters
+	DisableCheats
+	DamageFactor = 2
+	SpawnFilter = Nightmare
+	Name = "I'd Buy That For A Dollar"
+	MustConfirm = "You really think you can handle this setting?"
+	Key = "i"
+}
+
+//Episodes
+// Episodes
+Episode map01
+{
+    Name = "The Heroin Bust"
+}
+
+Episode map04
+{
+    Name = "Riots in Old Detroit"
+}
+
+Episode map07
+{
+    Name = "The Red Light Gang War"
+}
+
+Episode map10
+{
+    Name = "Hunted"
+}
+
+Episode map13
+{
+    Name = "Showdown"
+}
+
+//Missions
+//Heroin Factory - Apprehend Boddicker
+map map01 "Heroin Factory 1/3"
+{
+	levelnum = 1
+	cluster = 1
+	sky1 = "RoboSky"
+	music = "BGMFACT"
+	next = map02
+	ResetInventory
+	ResetHealth
+}
+
+map map02 "Heroin Factory 2/3"
+{
+	levelnum = 2
+	cluster = 1
+	sky1 = "RoboSky"
+	music = "BGMINT1"
+	next = map03
+}
+
+map map03 "Heroin Factory 3/3" // Boss: Joe Cox
+{
+	levelnum = 3
+	cluster = 1
+	sky1 = "RoboSky"
+	music = "BGMFACT"
+	next = map04
+}
+
+//Old Detroit - Rescue Innocents During Riots
+map map04 "Old Detroit 1/3"
+{
+	levelnum = 4
+	cluster = 1
+	sky1 = "RoboSky"
+	music = "BGMCITY"
+	next = map05
+	ResetInventory
+	ResetHealth
+}
+
+map map05 "Old Detroit 2/3"
+{
+	levelnum = 5
+	cluster = 1
+	sky1 = "RoboSky"
+	music = "BGMINT2"
+	next = map06
+}
+
+map map06 "Old Detroit 3/3" // Boss: Emil's Van
+{
+	levelnum = 6
+	cluster = 1
+	sky1 = "RoboSky"
+	music = "BGMFUNK2"
+	next = map07
+}
+
+//Red Light District - Stop Gang Turf War
+map map07 "Red Light District 1/3"
+{
+	levelnum = 7
+	cluster = 1
+	sky1 = "RoboSky"
+	music = "BGMFUNK"
+	next = map08
+	ResetInventory
+	ResetHealth
+}
+
+map map08 "Red Light District 2/3"
+{
+	levelnum = 8
+	cluster = 1
+	sky1 = "RoboSky"
+	music = "BGMCITY"
+	next = map09
+}
+
+map map09 "Red Light District 3/3" // Boss: Leon Nash
+{
+	levelnum = 9
+	cluster = 1
+	sky1 = "RoboSky"
+	music = "BGMCLUB"
+	next = map10
+}
+
+//Hunted - Escape OCP Agents
+map map10 "Hunted 1/3"
+{
+	levelnum = 10
+	cluster = 1
+	sky1 = "RoboSky"
+	music = "BGMOCP"
+	next = map11
+	ResetInventory
+	ResetHealth
+}
+
+map map11 "Hunted 2/3"
+{
+	levelnum = 11
+	cluster = 1
+	sky1 = "RoboSky"
+	music = "BGMINT1"
+	next = map12
+	secretnext = map20
+}
+
+map map20 "Terminated"
+{
+	levelnum = 20
+	cluster = 1
+	sky1 = "TermSky"
+	music = "BGMTERM"
+	next = map12
+}
+
+map map12 "Hunted 3/3"  // Boss: ED-209
+{
+	levelnum = 12
+	cluster = 1
+	sky1 = "RoboSky"
+	music = "BGMOCP"
+	next = map13
+}
+
+//Steel Mill- Showdown with Boddicker Gang
+map map13 "Steel Mill 1/3"
+{
+	levelnum = 13
+	cluster = 1
+	sky1 = "RoboSky"
+	music = "BGMCITY"
+	next = map14
+	ResetInventory
+	ResetHealth
+}
+
+map map14 "Steel Mill 2/3"
+{
+	levelnum = 14
+	cluster = 1
+	sky1 = "RoboSky"
+	music = "BGMFUNK2"
+	next = map15
+}
+
+map map15 "Steel Mill 3/3"  // Boss: Clarence Boddicker
+{
+	levelnum = 15
+	cluster = 1
+	sky1 = "RoboSky"
+	music = "BGMCITY"
+	next = map16
+}
+
+//OCP Tower - Epilogue: Kill Dick Jones
+map map16 "OCP Executive Floor" 
+{
+	levelnum = 16
+	cluster = 1
+	sky1 = "RoboSky"
+	music = "BGMOCP"
+	next = endsequence,"RoboEnd"
+}
+
+//e1end
+Intermission Ep1End
+{
+	Image //book him
+	{
+		Music = "ROBOINTR"
+		Background = "cut1a"
+		Time = 4
+	}
+	Wiper
+	{
+		WipeType = Crossfade
+	}
+	Image //whats the charge?
+	{
+		Background = "cut1b"
+		Time = 4
+	}
+	Wiper
+	{
+		WipeType = Crossfade
+	}
+	Image //hes a cop killer
+	{
+		Background = "cut1c"
+		Time = 5
+	}
+	Wiper
+	{
+		WipeType = Crossfade
+	}
+	Image //just gimme my fuckin phone call
+	{
+		Background = "cut1d"
+		Time = 6
+	}
+}
+
+//e2end
+Intermission Ep2End
+{
+	Image //dead or alive...
+	{
+		Music = "ROBOINTR"
+		Background = "cut2a"
+		Time = 4
+	}
+	Wiper
+	{
+		WipeType = Crossfade
+	}
+	Image //any words for the kids?
+	{
+		Background = "cut2b"
+		Time = 4
+	}
+	Wiper
+	{
+		WipeType = Crossfade
+	}
+	Image //stay out of trouble
+	{
+		Background = "cut2c"
+		Time = 5
+	}
+}
+
+//e3end
+Intermission Ep3End
+{
+	Image //directive 4
+	{
+		Music = "ROBOINTR"
+		Background = "cut3a"
+		Time = 4
+	}
+	Wiper
+	{
+		WipeType = Crossfade
+	}
+	Image //my contribution
+	{
+		Background = "cut3b"
+		Time = 4
+	}
+	Wiper
+	{
+		WipeType = Crossfade
+	}
+	Image //shutdown
+	{
+		Background = "cut3c"
+		Time = 5
+	}
+	Wiper
+	{
+		WipeType = Crossfade
+	}
+	Image //you're our product
+	{
+		Background = "cut3d"
+		Time = 6
+	}
+}
+
+//e4end
+Intermission Ep4End
+{
+	Image //evidence
+	{
+		Music = "ROBOINTR"
+		Background = "cut4a"
+		Time = 4
+	}
+	Wiper
+	{
+		WipeType = Crossfade
+	}
+	Image //kill it
+	{
+		Background = "cut4b"
+		Time = 4
+	}
+	Wiper
+	{
+		WipeType = Crossfade
+	}
+	Image //military weaponry?
+	{
+		Background = "cut4c"
+		Time = 5
+	}
+	Wiper
+	{
+		WipeType = Crossfade
+	}
+	Image //we ARE the military
+	{
+		Background = "cut4d"
+		Time = 4
+	}
+	Wiper
+	{
+		WipeType = Crossfade
+	}
+	Image //nothing fancy
+	{
+		Background = "cut4e"
+		Time = 5
+	}
+	Wiper
+	{
+		WipeType = Crossfade
+	}
+	Image //get the car
+	{
+		Background = "cut4f"
+		Time = 6
+	}
+}
+
+//e5end
+Intermission Ep5End
+{
+	Image //lewis
+	{
+		Music = "ROBOINTR"
+		Background = "cut5a"
+		Time = 4
+	}
+	Wiper
+	{
+		WipeType = Crossfade
+	}
+	Image //LEWIS
+	{
+		Background = "cut5b"
+		Time = 4
+	}
+	Wiper
+	{
+		WipeType = Crossfade
+	}
+	Image //im a mess
+	{
+		Background = "cut5c"
+		Time = 5
+	}
+	Wiper
+	{
+		WipeType = Crossfade
+	}
+	Image //theyll fix you
+	{
+		Background = "cut5d"
+		Time = 6
+	}
+}
+
+//e6end
+Intermission RoboEnd
+{
+	Image //whats your name?
+	{
+		Music = "BGMFACT"
+		Background = "cut6a"
+		Time = 6
+	}
+	Wiper
+	{
+		WipeType = Crossfade
+	}
+	Image //murphy.
+	{
+		Background = "cut6b"
+		Time = 6
+	}
+	Wiper
+	{
+		WipeType = Crossfade
+	}
+	Image //credits
+	{
+		Background = "CREDIT"
+	}
 }

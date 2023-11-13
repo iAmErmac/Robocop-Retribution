@@ -1,9 +1,27 @@
 
-ACTOR Ed209Gun_3D : Ed209Gun replaces Ed209Gun
+ACTOR Ed209Gun : weapon replaces Chaingun 12331
 {
+	//$Category RoboGuns
+	Weapon.SelectionOrder 1
+	Weapon.Ammotype "20mmSlug"
+	Weapon.Ammouse 1
+	Weapon.Ammogive 25
+	Weapon.SlotNumber 4
+	decal BulletChip
+	Inventory.Pickupmessage "ED-209 Autocannon!"
 	decal none
+	
 	States
 	{
+	Ready:
+		SHRP A 1 A_WeaponReady
+		loop
+	Select:
+		SHRP C 1 A_RAISE
+		Loop
+	Deselect:
+		SHRP C 1 A_Lower
+		Loop
 	Fire:
 		SHRP A 0 A_GunFlash
 		SHRP B 0 Bright A_PlaySound("ed209/shoot")
@@ -43,9 +61,27 @@ ACTOR Ed209Gun_3D : Ed209Gun replaces Ed209Gun
 	}
 }
 
+ACTOR 20mmSlug : Ammo 12332
+{
+	//$Category Ammunition
+	Inventory.Amount 15
+	Inventory.MaxAmount 100
+	Ammo.BackpackAmount 25
+	Ammo.BackpackMaxAmount 200
+	Inventory.PickupMessage "A handful of 20mm Autocannon Rounds."
+	Inventory.Icon AMAUA0
+	
+	States
+	{
+	Spawn:
+		AMAU A 1
+		Loop
+	}
+}
+
 ACTOR 30calPuff : BulletPuff
 {
-decal bulletchip
-Scale 1.25
-+EXTREMEDEATH
+	decal bulletchip
+	Scale 1.25
+	+EXTREMEDEATH
 }

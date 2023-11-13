@@ -4,8 +4,17 @@ Actor RifleScopeView : Inventory
 	Inventory.maxamount 1
 }
 
-Actor CobraAssaultCannon_3D : CobraAssaultCannon replaces CobraAssaultCannon
+ACTOR CobraAssaultCannon : Weapon replaces SuperShotgun 12327
 {
+	//$Category RoboGuns
+	Weapon.SelectionOrder 2600
+	Weapon.AmmoUse 1
+	Weapon.AmmoGive 2
+	Weapon.AmmoType "BoomSlug"
+	Weapon.SlotNumber 6
+	Inventory.PickupMessage "Cobra Assault Cannon! State of the art bang bang!"
+	Obituary "%o was smeared across the landscape."
+
 	States
 	{
 	Ready:
@@ -20,6 +29,9 @@ Actor CobraAssaultCannon_3D : CobraAssaultCannon replaces CobraAssaultCannon
 		COBR E 0 A_TakeInventory("PowerScopeVision", 1)
 		//COBR E 0 A_SetBlend("00 00 00", 0.0, 1)
 		COBR A 1 A_Lower
+		Loop
+	Select:
+		COBR A 1 A_Raise
 		Loop
 	Fire:
 		COBR A 0 A_JumpIfInventory("RifleScopeView", 1, "Fire.Scoped")
@@ -80,8 +92,40 @@ Actor CobraAssaultCannon_3D : CobraAssaultCannon replaces CobraAssaultCannon
 	}
 }
 
-ACTOR CobraBullet: CobraBall replaces CobraBall {
+ACTOR BoomSlug : Ammo 12328
+{
+	//$Category Ammunition
+	Inventory.Amount 4
+	Inventory.MaxAmount 50
+	Ammo.BackpackAmount 1
+	Ammo.BackpackMaxAmount 100
+	Inventory.PickupMessage "A clip of Explosive Slugs."
+	Inventory.Icon COAMA0
+	
+	States
+	{
+	Spawn:
+		COAM A 1
+		Loop
+	}
+}
+
+ACTOR CobraBall : FastProjectile
+{ 
+	Radius 6
+	Height 8
+	Speed 30
+	Damage 10
+	Projectile
+	+RANDOMIZE
+	+MTHRUSPECIES
+	+EXTREMEDEATH
+	RenderStyle Add
+	Alpha 1
+	SeeSound "cobra/fire"
+	DeathSound "world/barrelx"
 	scale 0.4
+	
 	States
 	{
 	Spawn:
@@ -100,7 +144,8 @@ ACTOR CobraBullet: CobraBall replaces CobraBall {
 		Stop
 	}
 }
-ACTOR PlayerCobraBullet: CobraBullet replaces CobraPlayerBall
+
+ACTOR CobraPlayerBall : CobraBall
 {
 	Speed 100
 	scale 0.3

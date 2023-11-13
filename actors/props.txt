@@ -1,0 +1,2598 @@
+actor 60sCarRed 19600
+{
+	//$Category Voxel Vehicles Pack - Cars
+	//$Title "60's car - Red"
+	
+	Radius 32
+	Height 39
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		RCAR A -1
+		Stop
+	}
+}
+
+actor 60sCarBlue : 60sCarRed 19601
+{
+	//$Title "60's car - Blue"
+	
+	States
+	{
+	Spawn:
+		BCAR A -1
+		Stop
+	}
+}
+
+actor 60sCarGreen : 60sCarRed 19602
+{
+	//$Title "60's car - Green"
+
+	States
+	{
+	Spawn:
+		GCAR A -1
+		Stop
+	}
+}
+
+actor 60sCarOrange : 60sCarRed 19603
+{
+	//$Title "60's car - Orange"
+
+	States
+	{
+	Spawn:
+		OCAR A -1
+		Stop
+	}
+}
+
+actor 60sCarWhite : 60sCarRed 10604
+{
+	//$Title "60's car - White"
+
+	States
+	{
+	Spawn:
+		WCAR A -1
+		Stop
+	}
+}
+
+actor 60sCarPink : 60sCarRed 10605
+{
+	//$Title "60's car - Pink"
+
+	States
+	{
+	Spawn:
+		PCAR A -1
+		Stop
+	}
+}
+
+actor 60sCarBrown : 60sCarRed 10606
+{
+	//$Title "60's car - Brown"
+ 
+	States
+	{
+	Spawn:
+		BRCA A -1
+		Stop
+	}
+}
+
+actor ChopperRed 10607
+{
+	//$Category Voxel Vehicles Pack - Misc.
+	//$Title "Chopper bike - Red"
+
+	Radius 8
+	Height 32
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		RCHO A -1
+		Stop
+	}
+}
+
+actor ChopperBlue : ChopperRed 10608
+{
+	//$Title "Chopper bike - Blue"
+
+	States
+	{
+	Spawn:
+		BCHO A -1
+		Stop
+	}
+}
+
+actor ChopperGreen : ChopperRed 10609
+{
+	//$Title "Chopper bike - Green"
+
+	States
+	{
+	Spawn:
+		GCHO A -1
+		Stop
+	}
+}
+
+actor ChopperOrange : ChopperRed 10610
+{
+	//$Title "Chopper bike - Orange"
+
+	States
+	{
+	Spawn:
+		OCHO A -1
+		Stop
+	}
+}
+
+actor ChopperWhite : ChopperRed 10611
+{
+	//$Title "Chopper bike - White"
+
+	States
+	{
+	Spawn:
+		WCHO A -1
+		Stop
+	}
+}
+
+actor ChopperDarkRed : ChopperRed 10612
+{
+	//$Title "Chopper bike - Dark red"
+
+	States
+	{
+	Spawn:
+		DCHO A -1
+		Stop
+	}
+}
+
+actor 80sTaxi : 60sCarRed 10613
+{
+	//$Category Voxel Vehicles Pack - Special cars
+	//$Title "80's taxi"
+
+	States
+	{
+	Spawn:
+		OCAB A -1
+		Stop
+	}
+}
+
+actor 80sCopOff : 60sCarRed 10614
+{
+	//$Category Voxel Vehicles Pack - Special cars
+	//$Title "80's cop - Off"
+
+	States
+	{
+	Spawn:
+		OCOP A -1
+		Stop
+	}
+}
+
+actor 80sCopOn : 60sCarRed 10615
+{
+	//$Category Voxel Vehicles Pack - Special cars
+	//$Title "80's cop - On"
+
+	States
+	{
+	Spawn:
+		OCOP ABAC 5
+		Loop
+	}
+}
+
+actor ModernCarRed 10616
+{
+	//$Category Voxel Vehicles Pack - Cars
+	//$Title "Modern car - Red"
+
+	Radius 28
+	Height 40
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		RMOD A -1
+		Stop
+	}
+}
+
+actor ModernCarDarkRed : ModernCarRed 10617
+{
+	//$Title "Modern car - Dark red"
+
+	States
+	{
+	Spawn:
+		DRMO A -1
+		Stop
+	}
+}
+
+actor ModernCarBlue : ModernCarRed 10618
+{
+	//$Title "Modern car - Blue"
+
+	States
+	{
+	Spawn:
+		BMOD A -1
+		Stop
+	}
+}
+
+actor ModernCarDarkBlue : ModernCarRed 10619
+{
+	//$Title "Modern car - Dark blue"
+
+	States
+	{
+	Spawn:
+		DBMO A -1
+		Stop
+	}
+}
+
+actor ModernCarGreen : ModernCarRed 10620
+{
+	//$Title "Modern car - Green"
+
+	States
+	{
+	Spawn:
+		GMOD A -1
+		Stop
+	}
+}
+
+actor ModernCarDirtyGreen : ModernCarRed 10621
+{
+	//$Title "Modern car - Dirty green"
+
+	States
+	{
+	Spawn:
+		DGMO A -1
+		Stop
+	}
+}
+
+actor ModernCarOrange : ModernCarRed 10622
+{
+	//$Title "Modern car - Orange"
+
+	States
+	{
+	Spawn:
+		OMOD A -1
+		Stop
+	}
+}
+
+actor ModernCarPink : ModernCarRed 10623
+{
+	//$Title "Modern car - Pink"
+
+	States
+	{
+	Spawn:
+		PMOD A -1
+		Stop
+	}
+}
+
+actor ModernCarBrown : ModernCarRed 10624
+{
+	//$Title "Modern car - Brown"
+
+	States
+	{
+	Spawn:
+		BRMO A -1
+		Stop
+	}
+}
+
+actor 60sCarDarkRed : 60sCarRed 10625
+{
+	//$Title "60's car - Dark red"
+
+	States
+	{
+	Spawn:
+		DRCA A -1
+		Stop
+	}
+}
+actor 60sCarDarkBlue : 60sCarRed 10626
+{
+	//$Title "60's car - Dark blue"
+
+	States
+	{
+	Spawn:
+		DBCA A -1
+		Stop
+	}
+}
+
+actor 60sCarDirtyGreen : 60sCarRed 10627
+{
+	//$Title "60's car - Dirty green"
+
+	States
+	{
+	Spawn:
+		DGCA A -1
+		Stop
+	}
+}
+
+actor ModernTaxi : ModernCarRed 10628
+{
+	//$Category Voxel Vehicles Pack - Special cars
+	//$Title "Modern taxi"
+
+	States
+	{
+	Spawn:
+		MCAB A -1
+		Stop
+	}
+}
+
+actor ModernCopOff : ModernCarRed 10629
+{
+	//$Category Voxel Vehicles Pack - Special cars
+	//$Title "Modern cop - Off"
+
+	States
+	{
+	Spawn:
+		MCOP A -1
+		Stop
+	}
+}
+
+actor ModernCopOn : ModernCarRed 10630
+{
+	//$Category Voxel Vehicles Pack - Special cars
+	//$Title "Modern cop - On"
+
+	States
+	{
+	Spawn:
+		MCOP ABAC 5
+		Loop
+	}
+}
+
+actor 60sWagonRed : 60sCarRed 10631
+{
+	//$Title "60's wagon - Red"
+
+	States
+	{
+	Spawn:
+		RWAG A -1
+		Stop
+	}
+}
+
+actor 60sWagonDarkRed : 60sCarRed 10632
+{
+	//$Title "60's wagon - Dark red"
+
+	States
+	{
+	Spawn:
+		DRWA A -1
+		Stop
+	}
+}
+
+actor 60sWagonBlue : 60sCarRed 10633
+{
+	//$Title "60's wagon - Blue"
+
+	States
+	{
+	Spawn:
+		BWAG A -1
+		Stop
+	}
+}
+
+actor 60sWagonDarkBlue : 60sCarRed 10634
+{
+	//$Title "60's wagon - Dark blue"
+
+	States
+	{
+	Spawn:
+		DBWA A -1
+		Stop
+	}
+}
+
+actor 60sWagonGreen : 60sCarRed 10635
+{
+	//$Title "60's wagon - Green"
+
+	States
+	{
+	Spawn:
+		GWAG A -1
+		Stop
+	}
+}
+
+actor 60sWagonDirtyGreen : 60sCarRed 10636
+{
+	//$Title "60's wagon - Dirty green"
+
+	States
+	{
+	Spawn:
+		DGWA A -1
+		Stop
+	}
+}
+
+actor 60sWagonOrange : 60sCarRed 10637
+{
+	//$Title "60's wagon - Orange"
+
+	States
+	{
+	Spawn:
+		OWAG A -1
+		Stop
+	}
+}
+
+actor 60sWagonWhite : 60sCarRed 10638
+{
+	//$Title "60's wagon - White"
+
+	States
+	{
+	Spawn:
+		WWAG A -1
+		Stop
+	}
+}
+
+actor 60sWagonPink : 60sCarRed 10639
+{
+	//$Title "60's wagon - Pink"
+
+	States
+	{
+	Spawn:
+		PWAG A -1
+		Stop
+	}
+}
+
+actor 60sWagonBrown : 60sCarRed 10640
+{
+	//$Title "60's wagon - Brown"
+
+	States
+	{
+	Spawn:
+		BRWA A -1
+		Stop
+	}
+}
+
+actor HatchBackRed 10641
+{
+	//$Category Voxel Vehicles Pack - Cars
+	//$Title "Hatchback - Red"
+
+	Radius 26
+	Height 40
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		RHAT A -1
+		Stop
+	}
+}
+
+actor HatchBackDarkRed : HatchBackRed 10642
+{
+	//$Title "Hatchback - Dark red"
+
+	States
+	{
+	Spawn:
+		DRHA A -1
+		Stop
+	}
+}
+
+actor HatchBackBlue : HatchBackRed 10643
+{
+	//$Title "Hatchback - Blue"
+
+	States
+	{
+	Spawn:
+		BHAT A -1
+		Stop
+	}
+}
+
+actor HatchBackDarkBlue : HatchBackRed 10644
+{
+	//$Title "Hatchback - Dark blue"
+
+	States
+	{
+	Spawn:
+		DBHA A -1
+		Stop
+	}
+}
+
+actor HatchBackGreen: HatchBackRed 10645
+{
+	//$Title "Hatchback - Green"
+
+	States
+	{
+	Spawn:
+		GHAT A -1
+		Stop
+	}
+}
+
+actor HatchBackDirtyGreen : HatchBackRed 10646
+{
+	//$Title "Hatchback - Dirty green"
+
+	States
+	{
+	Spawn:
+		DGHA A -1
+		Stop
+	}
+}
+
+actor HatchBackOrange : HatchBackRed 10647
+{
+	//$Title "Hatchback - Orange"
+
+	States
+	{
+	Spawn:
+		OHAT A -1
+		Stop
+	}
+}
+
+actor HatchBackPink : HatchBackRed 10648
+{
+	//$Title "Hatchback - Pink"
+
+	States
+	{
+	Spawn:
+		PHAT A -1
+		Stop
+	}
+}
+
+actor HatchBackBrown : HatchBackRed 10649
+{
+	//$Title "Hatchback - Brown"
+
+	States
+	{
+	Spawn:
+		BRHA A -1
+		Stop
+	}
+}
+
+actor VanRed 10650
+{
+	//$Category Voxel Vehicles Pack - Cars
+	//$Title "Van - Red"
+
+	Radius 32
+	Height 56
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		RVAN A -1
+		Stop
+	}
+}
+
+actor VanDarkRed : VanRed 10651
+{
+	//$Title "Van - Dark red"
+
+	States
+	{
+	Spawn:
+		DRVA A -1
+		Stop
+	}
+}
+
+actor VanBlue : VanRed 10652
+{
+	//$Title "Van - Blue"
+
+	States
+	{
+	Spawn:
+		BVAN A -1
+		Stop
+	}
+}
+
+actor VanDarkBlue : VanRed 10653
+{
+	//$Title "Van - Dark blue"
+
+	States
+	{
+	Spawn:
+		DBVA A -1
+		Stop
+	}
+}
+
+actor VanGreen : VanRed 10654
+{
+	//$Title "Van - Green"
+
+	States
+	{
+	Spawn:
+		GVAN A -1
+		Stop
+	}
+}
+
+actor VanDirtyGreen : VanRed 10655
+{
+	//$Title "Van - Dirty green"
+
+	States
+	{
+	Spawn:
+		DGVA A -1
+		Stop
+	}
+}
+
+actor VanOrange : VanRed 10656
+{
+	//$Title "Van - Orange"
+
+	States
+	{
+	Spawn:
+		OVAN A -1
+		Stop
+	}
+}
+
+actor VanWhite : VanRed 10657
+{
+	//$Title "Van - White"
+
+	States
+	{
+	Spawn:
+		WVAN A -1
+		Stop
+	}
+}
+
+actor VanPink : VanRed 10658
+{
+	//$Title "Van - Pink"
+
+	States
+	{
+	Spawn:
+		PVAN A -1
+		Stop
+	}
+}
+
+actor VanBrown : VanRed 10659
+{
+	//$Title "Van - Brown"
+
+	States
+	{
+	Spawn:
+		BRVA A -1
+		Stop
+	}
+}
+
+actor VanUAC : VanRed 10660
+{
+	//$Title "Van - UAC"
+
+	States
+	{
+	Spawn:
+		UVAN A -1
+		Stop
+	}
+}
+
+actor PickupRed 10661
+{
+	//$Category Voxel Vehicles Pack - Cars
+	//$Title "Pickup - Red"
+
+	Radius 32
+	Height 48
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		RPIC A -1
+		Stop
+	}
+}
+
+actor PickupDarkRed : PickupRed 10662
+{
+	//$Title "Pickup - Dark red"
+
+	States
+	{
+	Spawn:
+		DRPI A -1
+		Stop
+	}
+}
+
+actor PickupBlue : PickupRed 10663
+{
+	//$Title "Pickup - Blue"
+
+	States
+	{
+	Spawn:
+		BPIC A -1
+		Stop
+	}
+}
+
+actor PickupDarkBlue : PickupRed 10664
+{
+	//$Title "Pickup - Dark blue"
+
+	States
+	{
+	Spawn:
+		DBPI A -1
+		Stop
+	}
+}
+
+actor PickupGreen : PickupRed 10665
+{
+	//$Title "Pickup - Green"
+
+	States
+	{
+	Spawn:
+		GPIC A -1
+		Stop
+	}
+}
+
+actor PickupDirtyGreen : PickupRed 10666
+{
+	//$Title "Pickup - Dirty green"
+
+	States
+	{
+	Spawn:
+		DGPI A -1
+		Stop
+	}
+}
+
+actor PickupOrange : PickupRed 10667
+{
+	//$Title "Pickup - Orange"
+
+	States
+	{
+	Spawn:
+		OPIC A -1
+		Stop
+	}
+}
+
+actor PickupWhite : PickupRed 10668
+{
+	//$Title "Pickup - White"
+
+	States
+	{
+	Spawn:
+		WPIC A -1
+		Stop
+	}
+}
+
+actor PickupPink : PickupRed 10669
+{
+	//$Title "Pickup - Pink"
+
+	States
+	{
+	Spawn:
+		PPIC A -1
+		Stop
+	}
+}
+
+actor PickupBrown : PickupRed 10670
+{
+	//$Title "Pickup - Brown"
+
+	States
+	{
+	Spawn:
+		BRPI A -1
+		Stop
+	}
+}
+
+actor PlaneRed 10671
+{
+	//$Category Voxel Vehicles Pack - Aircraft
+	//$Title "Plane - Red"
+
+	Radius 26
+	Height 58
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		RPLA A -1
+		Stop
+	}
+}
+
+actor PlaneDarkRed : PlaneRed 10672
+{
+	//$Title "Plane - Dark red"
+
+	States
+	{
+	Spawn:
+		DRPL A -1
+		Stop
+	}
+}
+
+actor PlaneBlue : PlaneRed 10673
+{
+	//$Title "Plane - Blue"
+
+	States
+	{
+	Spawn:
+		BPLA A -1
+		Stop
+	}
+}
+
+actor PlaneDarkBlue : PlaneRed 10674
+{
+	//$Title "Plane - Dark blue"
+
+	States
+	{
+	Spawn:
+		DBPL A -1
+		Stop
+	}
+}
+
+actor PlaneGreen : PlaneRed 10675
+{
+	//$Title "Plane - Green"
+
+	States
+	{
+	Spawn:
+		GPLA A -1
+		Stop
+	}
+}
+
+actor PlaneDarkGreen : PlaneRed 10676
+{
+	//$Title "Plane - Dark green"
+
+	States
+	{
+	Spawn:
+		DGPL A -1
+		Stop
+	}
+}
+
+actor PlaneOrange : PlaneRed 10677
+{
+	//$Title "Plane - Orange"
+
+	States
+	{
+	Spawn:
+		OPLA A -1
+		Stop
+	}
+}
+
+actor PlaneGreen&Gold : PlaneRed 10678
+{
+	//$Title "Plane - Green & gold"
+
+	States
+	{
+	Spawn:
+		GGPL A -1
+		Stop
+	}
+}
+
+actor HelicopterRed 10679
+{
+	//$Category Voxel Vehicles Pack - Aircraft
+	//$Title "Helicopter - Red"
+
+	Radius 22
+	Height 80
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		RHEL A -1
+		Stop
+	}
+}
+
+actor HelicopterDarkRed : HelicopterRed 10680
+{
+	//$Title "Helicopter - Dark red"
+
+	States
+	{
+	Spawn:
+		DRHE A -1
+		Stop
+	}
+}
+
+actor HelicopterBlue : HelicopterRed 10681
+{
+	//$Title "Helicopter - Blue"
+
+	States
+	{
+	Spawn:
+		BHEL A -1
+		Stop
+	}
+}
+
+actor HelicopterDarkBlue : HelicopterRed 10682
+{
+	//$Title "Helicopter - Dark blue"
+
+	States
+	{
+	Spawn:
+		DBHE A -1
+		Stop
+	}
+}
+
+actor HelicopterGreen : HelicopterRed 10683
+{
+	//$Title "Helicopter - Green"
+
+	States
+	{
+	Spawn:
+		GHEL A -1
+		Stop
+	}
+}
+
+actor HelicopterDarkGreen : HelicopterRed 10684
+{
+	//$Title "Helicopter - Dark green"
+
+	States
+	{
+	Spawn:
+		DGHE A -1
+		Stop
+	}
+}
+
+actor HelicopterOrange : HelicopterRed 10685
+{
+	//$Title "Helicopter - Orange"
+
+	States
+	{
+	Spawn:
+		OHEL A -1
+		Stop
+	}
+}
+
+actor HelicopterUAC : HelicopterRed 10686
+{
+	//$Title "Helicopter - UAC"
+
+	States
+	{
+	Spawn:
+		UHEL A -1
+		Stop
+	}
+}
+
+actor ArmoredUACtruckGreen 10687
+{
+	//$Category Voxel Vehicles Pack - Special cars
+	//$Title "Armored UAC truck - Green"
+
+	Radius 36
+	Height 64
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		ATRU A -1
+		Stop
+	}
+}
+
+actor ArmoredUACtruckBrown : ArmoredUACtruckGreen  10688
+{
+	//$Title "Armored UAC truck - Brown"
+
+	States
+	{
+	Spawn:
+		ATR2 A -1
+		Stop
+	}
+}
+
+actor VTOLgreen 10689
+{
+	//$Category Voxel Vehicles Pack - Aircraft
+	//$Title "VTOL - Green"
+
+	Radius 32
+	Height 68
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		GVTO A -1
+		Stop
+	}
+}
+
+actor VTOLbrown : VTOLgreen 10690
+{
+	//$Title "VTOL - Brown"
+
+	States
+	{
+	Spawn:
+		BVTO A -1
+		Stop
+	}
+}
+
+actor TankGreen 10691
+{
+	//$Category Voxel Vehicles Pack - Misc.
+	//$Title "Tank - Green"
+
+	Radius 40
+	Height 64
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		GTAN A -1
+		Stop
+	}
+}
+
+actor TankSand : TankGreen 10692
+{
+	//$Title "Tank - Sand camo"
+
+	States
+	{
+	Spawn:
+		STAN A -1
+		Stop
+	}
+}
+
+actor TankCamo : TankGreen 10693
+{
+	//$Title "Tank - Forest camo"
+
+	States
+	{
+	Spawn:
+		CTAN A -1
+		Stop
+	}
+}
+
+actor ForkliftOrange 10694
+{
+	//$Category Voxel Vehicles Pack - Misc.
+	//$Title "Forklift - Orange"
+
+	Radius 20
+	Height 64
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		OFOR A -1
+		Stop
+	}
+}
+
+actor BulldozerOrange 10695
+{
+	//$Category Voxel Vehicles Pack - Heavy equipment
+	//$Title "Bulldozer - Orange"
+
+	Radius 28
+	Height 97
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		OBUL A -1
+		Stop
+	}
+}
+
+actor ForkliftYellow : ForkliftOrange 10696
+{
+	//$Title "Forklift - Yellow"
+
+	States
+	{
+	Spawn:
+		YFOR A -1
+		Stop
+	}
+}
+
+actor BulldozerRed : BulldozerOrange 10703
+{
+	//$Title "Bulldozer - Red"
+
+	States
+	{
+	Spawn:
+		RBUL A -1
+		Stop
+	}
+}
+
+actor BulldozerDarkRed : BulldozerOrange 10704
+{
+	//$Title "Bulldozer - Dark red"
+
+	States
+	{
+	Spawn:
+		DRBU A -1
+		Stop
+	}
+}
+
+actor BulldozerGreen : BulldozerOrange 10705
+{
+	//$Title "Bulldozer - Green"
+
+	States
+	{
+	Spawn:
+		GBUL A -1
+		Stop
+	}
+}
+
+actor BulldozerDarkGreen : BulldozerOrange 10706
+{
+	//$Title "Bulldozer - Dark green"
+
+	States
+	{
+	Spawn:
+		DGBU A -1
+		Stop
+	}
+}
+
+actor BulldozerBrown : BulldozerOrange 10707
+{
+	//$Title "Bulldozer - Brown"
+
+	States
+	{
+	Spawn:
+		BRBU A -1
+		Stop
+	}
+}
+
+actor ExcavatorOrange 10708
+{
+	//$Category Voxel Vehicles Pack - Heavy equipment
+	//$Title "Excavator - Orange"
+
+	Radius 36
+	Height 86
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		OEXC A -1
+		Stop
+	}
+}
+
+actor ExcavatorRed : ExcavatorOrange 10709
+{
+	//$Title "Excavator - Red"
+
+	States
+	{
+	Spawn:
+		REXC A -1
+		Stop
+	}
+}
+
+actor ExcavatorDarkRed : ExcavatorOrange 10710
+{
+	//$Title "Excavator - Dark red"
+
+	States
+	{
+	Spawn:
+		DREX A -1
+		Stop
+	}
+}
+
+actor ExcavatorBlue : ExcavatorOrange 10711
+{
+	//$Title "Excavator - Blue"
+
+	States
+	{
+	Spawn:
+		BEXC A -1
+		Stop
+	}
+}
+
+actor ExcavatorDarkBlue : ExcavatorOrange 10712
+{
+	//$Title "Excavator - Dark blue"
+
+	States
+	{
+	Spawn:
+		DBEX A -1
+		Stop
+	}
+}
+
+actor ExcavatorGreen : ExcavatorOrange 10713
+{
+	//$Title "Excavator - Green"
+
+	States
+	{
+	Spawn:
+		GEXC A -1
+		Stop
+	}
+}
+
+actor ExcavatorDarkGreen : ExcavatorOrange 10714
+{
+	//$Title "Excavator - Dark green"
+
+	States
+	{
+	Spawn:
+		DGEX A -1
+		Stop
+	}
+}
+
+actor ExcavatorBrown : ExcavatorOrange 10715
+{
+	//$Title "Excavator - Brown"
+
+	States
+	{
+	Spawn:
+		BREX A -1
+		Stop
+	}
+}
+
+actor TractorRed 10716
+{
+	//$Category Voxel Vehicles Pack - Heavy equipment
+	//$Title "Tractor - Red"
+
+	Radius 32
+	Height 88
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		R1TR A -1
+		Stop
+	}
+}
+
+actor TractorDarkRed1 : TractorRed 10717
+{
+	//$Title "Tractor - Dark red 1"
+
+	States
+	{
+	Spawn:
+		R2TR A -1
+		Stop
+	}
+}
+
+actor TractorDarkRed2 : TractorRed 10718
+{
+	//$Title "Tractor - Dark red 2"
+
+	States
+	{
+	Spawn:
+		R3TR A -1
+		Stop
+	}
+}
+
+actor TractorBlue : TractorRed 10719
+{
+	//$Title "Tractor - Blue"
+
+	States
+	{
+	Spawn:
+		BTRA A -1
+		Stop
+	}
+}
+
+actor TractorDarkBlue : TractorRed 10720
+{
+	//$Title "Tractor - Dark blue"
+
+	States
+	{
+	Spawn:
+		DBTR A -1
+		Stop
+	}
+}
+
+actor TractorGreen : TractorRed 10721
+{
+	//$Title "Tractor - Green"
+
+	States
+	{
+	Spawn:
+		GTRA A -1
+		Stop
+	}
+}
+
+actor TractorDarkGreen : TractorRed 10722
+{
+	//$Title "Tractor - Dark green"
+
+	States
+	{
+	Spawn:
+		DGTR A -1
+		Stop
+	}
+}
+
+actor TractorOrange : TractorRed 10723
+{
+	//$Title "Tractor - Orange"
+
+	States
+	{
+	Spawn:
+		OTRA A -1
+		Stop
+	}
+}
+
+actor TractorBrown1 : TractorRed 10724
+{
+	//$Title "Tractor - Brown 1"
+
+	States
+	{
+	Spawn:
+		LBTR A -1
+		Stop
+	}
+}
+
+actor TractorBrown2 : TractorRed 10725
+{
+	//$Title "Tractor - Brown 2"
+
+	States
+	{
+	Spawn:
+		BRTR A -1
+		Stop
+	}
+}
+
+actor VTOLgreenLogo : VTOLgreen 10726
+{
+	//$Title "VTOL - Green & logo"
+
+	States
+	{
+	Spawn:
+		GVT2 A -1
+		Stop
+	}
+}
+
+actor VTOLbrownLogo : VTOLgreen 10727
+{
+	//$Title "VTOL - Brown & logo"
+
+	States
+	{
+	Spawn:
+		BVT2 A -1
+		Stop
+	}
+}
+
+actor AmbulanceOff 10728
+{
+	//$Category Voxel Vehicles Pack - Special cars
+	//$Title "Ambulance - Off"
+
+	Radius 32
+	Height 67
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		AMBU A -1
+		Stop
+	}
+}
+
+actor AmbulanceOn : AmbulanceOff 10729
+{
+	//$Title "Ambulance - On"
+
+	States
+	{
+	Spawn:
+		AMBU ABAC 5
+		Loop
+	}
+}
+
+actor SemiRed 10730
+{
+	//$Category Voxel Vehicles Pack - Cars
+	//$Title "Semi truck - Red"
+	
+	Radius 40
+	Height 96
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		RSEM A -1
+		Stop
+	}
+}
+
+actor SemiDarkRed : SemiRed 10731
+{
+	//$Title "Semi truck - Dark red"
+
+	States
+	{
+	Spawn:
+		DRSE A -1
+		Stop
+	}
+}
+
+actor SemiBlue : SemiRed 10732
+{
+	//$Title "Semi truck - Blue"
+
+	States
+	{
+	Spawn:
+		BSEM A -1
+		Stop
+	}
+}
+
+actor SemiDarkBlue : SemiRed 10733
+{
+	//$Title "Semi truck - Dark blue"
+
+	States
+	{
+	Spawn:
+		DBSE A -1
+		Stop
+	}
+}
+
+actor SemiGreen : SemiRed 10734
+{
+	//$Title "Semi truck - Green"
+
+	States
+	{
+	Spawn:
+		GSEM A -1
+		Stop
+	}
+}
+
+actor SemiDirtyGreen : SemiRed 10735
+{
+	//$Title "Semi truck - Dirty green"
+
+	States
+	{
+	Spawn:
+		DGSE A -1
+		Stop
+	}
+}
+
+actor SemiOrange : SemiRed 10736
+{
+	//$Title "Semi truck - Orange"
+
+	States
+	{
+	Spawn:
+		OSEM A -1
+		Stop
+	}
+}
+
+actor SemiBrown1 : SemiRed 10737
+{
+	//$Title "Semi truck - Brown 1"
+
+	States
+	{
+	Spawn:
+		B1SE A -1
+		Stop
+	}
+}
+
+actor SemiBrown2 : SemiRed 10738
+{
+	//$Title "Semi truck - Brown 2"
+
+	States
+	{
+	Spawn:
+		B2SE A -1
+		Stop
+	}
+}
+
+actor SportsCarRed 10739
+{
+	//$Category Voxel Vehicles Pack - Cars
+	//$Title "Sports car - Red"
+	
+	Radius 28
+	Height 32
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		RSPO A -1
+		Stop
+	}
+}
+
+actor SportsCarDarkRed : SportsCarRed 10740
+{
+	//$Title "Sports car - Dark red"
+
+	States
+	{
+	Spawn:
+		DRSP A -1
+		Stop
+	}
+}
+
+actor SportsCarBlue : SportsCarRed 10741
+{
+	//$Title "Sports car - Blue"
+
+	States
+	{
+	Spawn:
+		BSPO A -1
+		Stop
+	}
+}
+
+actor SportsCarDarkBlue : SportsCarRed 10742
+{
+	//$Title "Sports car - Dark blue"
+
+	States
+	{
+	Spawn:
+		DBSP A -1
+		Stop
+	}
+}
+
+actor SportsCarGreen : SportsCarRed 10743
+{
+	//$Title "Sports car - Green"
+
+	States
+	{
+	Spawn:
+		GSPO A -1
+		Stop
+	}
+}
+
+actor SportsCarDirtyGreen : SportsCarRed 10744
+{
+	//$Title "Sports car - Dirty green"
+
+	States
+	{
+	Spawn:
+		DGSP A -1
+		Stop
+	}
+}
+
+actor SportsCarOrange : SportsCarRed 10745
+{
+	//$Title "Sports car - Orange"
+
+	States
+	{
+	Spawn:
+		OSPO A -1
+		Stop
+	}
+}
+
+actor SportsCarWhite : SportsCarRed 10746
+{
+	//$Title "Sports car - White"
+
+	States
+	{
+	Spawn:
+		WSPO A -1
+		Stop
+	}
+}
+
+actor SportsCarPink : SportsCarRed 10747
+{
+	//$Title "Sports car - Pink"
+
+	States
+	{
+	Spawn:
+		PSPO A -1
+		Stop
+	}
+}
+
+actor SportsCarBrown : SportsCarRed 10748
+{
+	//$Title "Sports car - Brown"
+
+	States
+	{
+	Spawn:
+		BRSP A -1
+		Stop
+	}
+}
+
+actor LimousineDarkBlue 10749
+{
+	//$Category Voxel Vehicles Pack - Special cars
+	//$Title "Limousine - Dark blue"
+	
+	Radius 28
+	Height 40
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		DBLI A -1
+		Stop
+	}
+}
+
+actor LimousineDarkRed : LimousineDarkBlue 10750
+{
+	//$Title "Limousine - Dark red"
+
+	States
+	{
+	Spawn:
+		DRLI A -1
+		Stop
+	}
+}
+
+actor LimousineWhite : LimousineDarkBlue 10751
+{
+	//$Title "Limousine - White"
+
+	States
+	{
+	Spawn:
+		WLIM A -1
+		Stop
+	}
+}
+
+actor LimousinePink : LimousineDarkBlue 10752
+{
+	//$Title "Limousine - Pink"
+
+	States
+	{
+	Spawn:
+		PLIM A -1
+		Stop
+	}
+}
+
+actor SuvRed 10753
+{
+	//$Category Voxel Vehicles Pack - Cars
+	//$Title "SUV - Red"
+	
+	Radius 30
+	Height 56
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		RSUV A -1
+		Stop
+	}
+}
+
+actor SuvDarkRed : SuvRed 10754
+{
+	//$Title "SUV - Dark red"
+
+	States
+	{
+	Spawn:
+		DRSU A -1
+		Stop
+	}
+}
+
+actor SuvBlue : SuvRed 10755
+{
+	//$Title "SUV - Blue"
+
+	States
+	{
+	Spawn:
+		BSUV A -1
+		Stop
+	}
+}
+
+actor SuvDarkBlue : SuvRed 10756
+{
+	//$Title "SUV - Dark blue"
+
+	States
+	{
+	Spawn:
+		DBSU A -1
+		Stop
+	}
+}
+
+actor SuvGreen : SuvRed 10757
+{
+	//$Title "SUV - Green"
+
+	States
+	{
+	Spawn:
+		GSUV A -1
+		Stop
+	}
+}
+
+actor SuvDirtyGreen : SuvRed 10758
+{
+	//$Title "SUV - Dirty green"
+
+	States
+	{
+	Spawn:
+		DGSU A -1
+		Stop
+	}
+}
+
+actor SuvOrange : SuvRed 10759
+{
+	//$Title "SUV - Orange"
+
+	States
+	{
+	Spawn:
+		OSUV A -1
+		Stop
+	}
+}
+
+actor SuvPink : SuvRed 10760
+{
+	//$Title "SUV - Pink"
+
+	States
+	{
+	Spawn:
+		PSUV A -1
+		Stop
+	}
+}
+
+actor SuvBrown : SuvRed 10761
+{
+	//$Title "SUV - Brown"
+
+	States
+	{
+	Spawn:
+		BRSU A -1
+		Stop
+	}
+}
+
+actor SnowmobileRed 10762
+{
+	//$Category Voxel Vehicles Pack - Snow
+	//$Title "Snowmobile - Red"
+	
+	Radius 12
+	Height 26
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		RSNO A -1
+		Stop
+	}
+}
+
+actor SnowmobileDarkRed : SnowmobileRed 10763
+{
+	//$Title "Snowmobile - Dark red"
+
+	States
+	{
+	Spawn:
+		DRSN A -1
+		Stop
+	}
+}
+
+actor SnowmobileBlue : SnowmobileRed 10764
+{
+	//$Title "Snowmobile - Blue"
+
+	States
+	{
+	Spawn:
+		BSNO A -1
+		Stop
+	}
+}
+
+actor SnowmobileDarkBlue : SnowmobileRed 10765
+{
+	//$Title "Snowmobile - Dark blue"
+
+	States
+	{
+	Spawn:
+		DBSN A -1
+		Stop
+	}
+}
+
+actor SnowmobileGreen : SnowmobileRed 10766
+{
+	//$Title "Snowmobile - Green"
+
+	States
+	{
+	Spawn:
+		GSNO A -1
+		Stop
+	}
+}
+
+actor SnowmobileDirtyGreen : SnowmobileRed 10767
+{
+	//$Title "Snowmobile - Dirty green"
+
+	States
+	{
+	Spawn:
+		DGSN A -1
+		Stop
+	}
+}
+
+actor SnowmobileOrange : SnowmobileRed 10768
+{
+	//$Title "Snowmobile - Orange"
+
+	States
+	{
+	Spawn:
+		OSNO A -1
+		Stop
+	}
+}
+
+actor SnowmobileWhite : SnowmobileRed 10769
+{
+	//$Title "Snowmobile - White"
+
+	States
+	{
+	Spawn:
+		WSNO A -1
+		Stop
+	}
+}
+
+actor SnowmobileBrown : SnowmobileRed 10770
+{
+	//$Title "Snowmobile - Brown"
+
+	States
+	{
+	Spawn:
+		BRSN A -1
+		Stop
+	}
+}
+
+actor SnowcatRed 10771
+{
+	//$Category Voxel Vehicles Pack - Snow
+	//$Title "Snowcat - Red"
+	
+	Radius 28
+	Height 65
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		RCAT A -1
+		Stop
+	}
+}
+
+actor SnowcatBlue : SnowcatRed 10772
+{
+	//$Title "Snowcat - Blue"
+
+	States
+	{
+	Spawn:
+		BCAT A -1
+		Stop
+	}
+}
+
+actor SnowcatOrange : SnowcatRed 10773
+{
+	//$Title "Snowcat - Orange"
+
+	States
+	{
+	Spawn:
+		OCAT A -1
+		Stop
+	}
+}
+
+actor SnowcatGreen : SnowcatRed 10774
+{
+	//$Title "Snowcat - Green"
+
+	States
+	{
+	Spawn:
+		GCAT A -1
+		Stop
+	}
+}
+
+actor SnowcoachRed : SnowcatRed 10775
+{
+	//$Title "Snowcoach - Red"
+
+	States
+	{
+	Spawn:
+		RCOA A -1
+		Stop
+	}
+}
+
+actor SnowcoachBlue : SnowcatRed 10776
+{
+	//$Title "Snowcoach - Blue"
+
+	States
+	{
+	Spawn:
+		BCOA A -1
+		Stop
+	}
+}
+
+actor SnowcoachOrange : SnowcatRed 10777
+{
+	//$Title "Snowcoach - Orange"
+
+	States
+	{
+	Spawn:
+		OCOA A -1
+		Stop
+	}
+}
+
+actor SnowcoachGreen : SnowcatRed 10778
+{
+	//$Title "Snowcoach - Green"
+
+	States
+	{
+	Spawn:
+		GCOA A -1
+		Stop
+	}
+}
+
+actor SnowcoachUAC : SnowcatRed 10779
+{
+	//$Title "Snowcoach - UAC"
+
+	States
+	{
+	Spawn:
+		UCOA A -1
+		Stop
+	}
+}
+
+actor HovercraftRed 10780
+{
+	//$Category Voxel Vehicles Pack - Watercraft
+	//$Title "Hovercraft - Red"
+	
+	Radius 32
+	Height 64
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		RHOV A -1
+		Stop
+	}
+}
+
+actor HovercraftBlue : HovercraftRed 10781
+{
+	//$Title "Hovercraft - Blue"
+
+	States
+	{
+	Spawn:
+		BHOV A -1
+		Stop
+	}
+}
+
+actor HovercraftGreen : HovercraftRed 10782
+{
+	//$Title "Hovercraft - Green"
+
+	States
+	{
+	Spawn:
+		GHOV A -1
+		Stop
+	}
+}
+
+actor HovercraftOrange : HovercraftRed 10783
+{
+	//$Title "Hovercraft - Orange"
+
+	States
+	{
+	Spawn:
+		OHOV A -1
+		Stop
+	}
+}
+
+actor HovercraftBrown : HovercraftRed 10784
+{
+	//$Title "Hovercraft - Brown"
+
+	States
+	{
+	Spawn:
+		BRHO A -1
+		Stop
+	}
+}
+
+actor MotorBoatRed 10785
+{
+	//$Category Voxel Vehicles Pack - Watercraft
+	//$Title "Motor boat - Red"
+	
+	Radius 32
+	Height 28
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		RBOA A -1
+		Stop
+	}
+}
+
+actor MotorBoatBlue : MotorBoatRed 10786
+{
+	//$Title "Motor boat - Blue"
+
+	States
+	{
+	Spawn:
+		BBOA A -1
+		Stop
+	}
+}
+
+actor MotorBoatGreen : MotorBoatRed 10787
+{
+	//$Title "Motor boat - Green"
+
+	States
+	{
+	Spawn:
+		GBOA A -1
+		Stop
+	}
+}
+
+actor MotorBoatDirtyGreen : MotorBoatRed 10788
+{
+	//$Title "Motor boat - Dirty green"
+
+	States
+	{
+	Spawn:
+		DGBO A -1
+		Stop
+	}
+}
+
+actor MotorBoatOrange : MotorBoatRed 10789
+{
+	//$Title "Motor boat - Orange"
+
+	States
+	{
+	Spawn:
+		OBOA A -1
+		Stop
+	}
+}
+
+actor MotorBoatYellow : MotorBoatRed 10790
+{
+	//$Title "Motor boat - Yellow"
+
+	States
+	{
+	Spawn:
+		YBOA A -1
+		Stop
+	}
+}
+
+actor FireTruckOff 10791
+{
+	//$Category Voxel Vehicles Pack - Special cars
+	//$Title "Fire truck - Off"
+
+	Radius 40
+	Height 96
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	States
+	{
+	Spawn:
+		FTRU A -1
+		Stop
+	}
+}
+
+actor FireTruckOn : FireTruckOff 10792
+{
+	//$Title "Fire truck - On"
+
+	States
+	{
+	Spawn:
+		FTRU ABAC 5
+		Loop
+	}
+}
+
+actor FlyingCarRed 10793
+{
+	//$Category Voxel Vehicles Pack - Misc.
+	//$Title "Flying car - Red"
+
+	Radius 32
+	Height 32
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	+NOGRAVITY
+	States
+	{
+	Spawn:
+		RFLY A -1
+		Stop
+	}
+}
+
+actor FlyingCarDarkRed : FlyingCarRed 10794
+{
+	//$Title "Flying car - Dark red"
+
+	States
+	{
+	Spawn:
+		DRFL A -1
+		Stop
+	}
+}
+
+actor FlyingCarBlue : FlyingCarRed 10795
+{
+	//$Title "Flying car - Blue"
+
+	States
+	{
+	Spawn:
+		BFLY A -1
+		Stop
+	}
+}
+
+actor FlyingCarDarkBlue : FlyingCarRed 10796
+{
+	//$Title "Flying car - Dark blue"
+
+	States
+	{
+	Spawn:
+		DBFL A -1
+		Stop
+	}
+}
+
+actor FlyingCarGreen : FlyingCarRed 10797
+{
+	//$Title "Flying car - Green"
+
+	States
+	{
+	Spawn:
+		GFLY A -1
+		Stop
+	}
+}
+
+actor FlyingCarDirtyGreen : FlyingCarRed 10798
+{
+	//$Title "Flying car - Dirty green"
+
+	States
+	{
+	Spawn:
+		DGFL A -1
+		Stop
+	}
+}
+
+actor FlyingCarOrange : FlyingCarRed 10799
+{
+	//$Title "Flying car - Orange"
+
+	States
+	{
+	Spawn:
+		OFLY A -1
+		Stop
+	}
+}
+
+actor FlyingCarPink : FlyingCarRed 10800
+{
+	//$Title "Flying car - Pink"
+
+	States
+	{
+	Spawn:
+		PFLY A -1
+		Stop
+	}
+}
+
+actor FlyingCarBrown : FlyingCarRed 10801
+{
+	//$Title "Flying car - Brown"
+
+	States
+	{
+	Spawn:
+		BRFL A -1
+		Stop
+	}
+}
+
+actor FlyingCopOff 10802
+{
+	//$Category Voxel Vehicles Pack - Misc.
+	//$Title "Flying cop - Off"
+
+	Radius 32
+	Height 32
+	+SOLID
+	+SHOOTABLE
+	+NODAMAGE
+	+NOBLOOD
+	+CANPASS
+	+NOGRAVITY
+	States
+	{
+	Spawn:
+		FCOP A -1
+		Stop
+	}
+}
+
+actor FlyingCopOn : FlyingCopOff 10803
+{
+	//$Title "Flying cop - On"
+
+	States
+	{
+	Spawn:
+		FCOP ABAC 5
+		Loop
+	}
+}

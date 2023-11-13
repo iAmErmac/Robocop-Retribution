@@ -1,27 +1,33 @@
-ACTOR NewRoboPlayer : DoomPlayer
+ACTOR ClassID : Inventory
 {
-  Player.DisplayName "Murphy"
-  Player.StartItem "Auto9_3D", 1
-  Player.StartItem "Clip", 50
-  Player.StartItem "GreenArmor", 1
-  Player.StartItem "Robopunch_3D", 1
-  Player.StartItem ClassID 1
-  Player.Face ROB
-  Player.Weaponslot 1, "RoboPunch_3D","Grinder_3D"
-  Player.Weaponslot 2, "Auto9_3D"
-  Player.Weaponslot 3, "RoboShotgun_3D"
-  Player.Weaponslot 4, "Ed209Gun_3D"
-  Player.Weaponslot 5, "MiniMissileShooter_3D"
-  Player.Weaponslot 6, "CobraAssaultCannon_3D"
-  Player.Weaponslot 7, "M27PlasmaRifle_3D"
-  Player.SoundClass "Roboplayer"
-  Player.DisplayName "Murphy"
-  Player.Crouchsprite "ROBC"
-  Player.ForwardMove 0.58, 0.62
-  Player.SideMove 0.575, 0.625
-  Player.ViewBob 0.5
-  DamageFactor "Fire",0
-  States
+	Inventory.MaxAmount 1
+}
+
+ACTOR RoboPlayer : DoomPlayer
+{
+	Player.DisplayName "Murphy"
+	Player.StartItem "Auto9", 1
+	Player.StartItem "Clip", 50
+	Player.StartItem "GreenArmor", 1
+	Player.StartItem "Robopunch", 1
+	Player.StartItem ClassID 1
+	Player.Face ROB
+	Player.Weaponslot 1, "RoboPunch","Grinder"
+	Player.Weaponslot 2, "Auto9"
+	Player.Weaponslot 3, "RoboShotgun"
+	Player.Weaponslot 4, "Ed209Gun"
+	Player.Weaponslot 5, "MiniMissileShooter"
+	Player.Weaponslot 6, "CobraAssaultCannon"
+	Player.Weaponslot 7, "M27PlasmaRifle"
+	Player.SoundClass "Roboplayer"
+	Player.DisplayName "Murphy"
+	Player.Crouchsprite "ROBC"
+	Player.ForwardMove 0.58, 0.62
+	Player.SideMove 0.575, 0.625
+	Player.ViewBob 0.5
+	DamageFactor "Fire",0
+
+	States
 	{
 	Spawn:
 		ROBO A -1

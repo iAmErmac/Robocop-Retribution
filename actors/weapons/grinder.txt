@@ -1,11 +1,23 @@
 
-ACTOR Grinder_3D : Grinder replaces Grinder
+ACTOR Grinder : Chainsaw replaces Chainsaw 12329
 {
-  States
-  {
+	//$Category RoboGuns
+	Inventory.PickupMessage "OCP Grinder Attachment."
+	Obituary "%k ground %o to cutlets."
+	Weapon.SelectionOrder 2400
+	Weapon.SlotNumber 7
+	
+	States
+	{
 	Ready:
 		HSAW ABCDEFGHIJK 1 A_WeaponReady
 		HSW2 ABCDEFGHIJKLMNOPQRSTUVWXYZ 1 A_WeaponReady
+		Loop
+	Deselect:
+		HSAW A 1 A_Lower
+		Loop
+	Select:
+		HSAW A 1 A_Raise
 		Loop
 	Fire:
 		"####" # 0 A_JumpIf(GetCVAR("rvw_weapons")==1, "Fire.Enhanced")
@@ -40,5 +52,5 @@ ACTOR Grinder_3D : Grinder replaces Grinder
 		HSAW A 0 A_JumpIf(GetCVAR("rvw_pickupmodel")==0, "Spawn")
 		HSWP A 1 Bright
 		loop
-  }
+	}
 }

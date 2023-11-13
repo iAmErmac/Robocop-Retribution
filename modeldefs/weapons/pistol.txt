@@ -1,0 +1,43 @@
+
+Model Auto9
+{
+   Path "models/weapons/auto9"
+   Model 0 "auto9.md3"
+   Skin 0 "auto9.png"
+   Scale -0.65 0.65 0.65
+   Offset 0.0 -30.0 -8.0
+   
+   //Ready
+   FrameIndex AUT9 A 0 0
+   
+   //Fire
+   FrameIndex AUT9 B 0 1
+   FrameIndex AUT9 C 0 2
+}
+
+//Muzzle flash
+Model Auto9
+{
+   Path "models/weapons/auto9"
+   Model 0 "pistol_mf.md3"
+   Skin 0 "pistol_mf.png"
+   Scale -0.65 0.65 0.65
+   Offset 0.0 -30.0 -8.0
+   
+   FrameIndex A9MF A 0 1
+}
+
+//Pickup model
+Model Auto9
+{
+   Path "models/weapons/auto9"
+   Model 0 "auto9_pickup.md3"
+   Skin 0 "auto9.png"
+   Scale 0.4 0.4 0.4
+   Offset 0.0 0.0 0.0
+   
+   ROTATING
+   ROTATION-SPEED 0.2
+   
+   FrameIndex AUTP A 0 0
+}

@@ -1,5 +1,0 @@
-Gameinfo
-{
-	Playerclasses = "NewRoboPlayer"
-	EventHandlers = "RobocopWeaponReplace", "RobocopMonsterReplace", "PlayerPropModifier", "SuperHumanMovesHandler"
-}

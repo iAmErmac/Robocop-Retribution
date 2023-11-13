@@ -525,3 +525,398 @@ decalgroup ShotChipGlow //with glowy stuff
 	ShotChip4Glow	1
 	ShotChip5Glow	1
 }
+
+
+//-------------------------------------------------------------
+//	Big blood decals from SuperDoom3: Take II by DBT
+decal SD3TIISplat1
+{
+	pic D3BLSM01
+	shade "BloodDefault"
+	x-scale 0.6
+	y-scale 0.6
+	randomflipx
+	randomflipy
+}
+
+decal SD3TIISplat2
+{
+	pic D3BLSM02
+	shade "BloodDefault"
+	x-scale 0.6
+	y-scale 0.6
+	randomflipx
+	randomflipy
+}
+decal SD3TIISplat3
+{
+	pic D3BLSM03
+	shade "BloodDefault"
+	x-scale 0.6
+	y-scale 0.6
+	randomflipx
+	randomflipy
+}
+decal SD3TIISplat4
+{
+	pic D3BLSM04
+	shade "BloodDefault"
+	x-scale 0.6
+	y-scale 0.6
+	randomflipx
+	randomflipy
+}
+decal SD3TIISplat5
+{
+	pic D3BLSM05
+	shade "BloodDefault"
+	x-scale 0.6
+	y-scale 0.6
+	randomflipx
+	randomflipy
+}
+decal SD3TIISplat6
+{
+	pic D3BLSM06
+	shade "BloodDefault"
+	x-scale 0.6
+	y-scale 0.6
+	randomflipx
+	randomflipy
+}
+decal SD3TIISplat7
+{
+	pic D3BLSM07
+	shade "BloodDefault"
+	x-scale 0.6
+	y-scale 0.6
+	randomflipx
+	randomflipy
+}
+decal SD3TIISplat8
+{
+	pic D3BLSM08
+	shade "BloodDefault"
+	x-scale 0.66
+	y-scale 0.6
+	randomflipx
+	randomflipy
+}
+
+
+//-------------------------------------------------------------
+//	Big blood decals from SuperDoom3: Take II by DBT
+decal SD3TIISplatBigger1
+{
+	pic D3BLBG01
+	shade "BloodDefault"
+	x-scale 0.7
+	y-scale 0.6
+	randomflipx
+	randomflipy
+}
+decal SD3TIISplatBigger2
+{
+	pic D3BLBG02
+	shade "BloodDefault"
+	x-scale 0.7
+	y-scale 0.6
+	randomflipx
+	randomflipy
+}
+
+decal SD3TIISplatBigger3
+{
+	pic D3BLBG03
+	shade "BloodDefault"
+	x-scale 0.7
+	y-scale 0.6
+	randomflipx
+	randomflipy
+}
+
+decal SD3TIISplatBigger4
+{
+	pic D3BLBG04
+	shade "BloodDefault"
+	x-scale 0.7
+	y-scale 0.6
+	randomflipx
+	randomflipy
+}
+
+decal SD3TIISplatBigger5
+{
+	pic D3BLBG05
+	shade "BloodDefault"
+	x-scale 0.7
+	y-scale 0.6
+	randomflipx
+	randomflipy
+}
+
+
+//-------------------------------------------------------------
+//	Smal blood decals newly added for AEoD6
+//	From the Source engine. Ripped by Major Cooke
+//	Conversion for Zdoom by DBT
+//-------------------------------------------------------------
+decal BloodSmall01
+{
+	pic wblood1
+	shade "BloodDefault"
+	x-scale 0.48
+	y-scale 0.48
+	randomflipx
+	randomflipy
+}
+decal BloodSmall02
+{
+	pic wblood2
+	shade "BloodDefault"
+	x-scale 0.48
+	y-scale 0.48
+	randomflipx
+	randomflipy
+}
+decal BloodSmall03
+{
+	pic wblood3
+	shade "BloodDefault"
+	x-scale 0.48
+	y-scale 0.48
+	randomflipx
+	randomflipy
+}
+decal BloodSmall04
+{
+	pic wblood4
+	shade "BloodDefault"
+	x-scale 0.48
+	y-scale 0.48
+	randomflipx
+	randomflipy
+}
+decal BloodSmall05
+{
+	pic wblood5
+	shade "BloodDefault"
+	x-scale 0.48
+	y-scale 0.48
+	randomflipx
+	randomflipy
+}
+
+//-------------------------------------------------------------
+//	Big blood decals newly added for AEoD6
+//	From GameBanana.com (see credits)
+//	Ripping and Conversion for Zdoom by DBT
+//-------------------------------------------------------------
+decal BloodBig01
+{
+	pic wblood6
+	shade "BloodDefault"
+	x-scale 0.72
+	y-scale 0.72
+	randomflipx
+	randomflipy
+}
+decal BloodBig02
+{
+	pic wblood7
+	shade "BloodDefault"
+	x-scale 0.72
+	y-scale 0.72
+	randomflipx
+	randomflipy
+}
+decal BloodBig03
+{
+	pic wblood8
+	shade "BloodDefault"
+	x-scale 0.72
+	y-scale 0.72
+	randomflipx
+	randomflipy
+}
+decal BloodBig04
+{
+	pic wblood9
+	shade "BloodDefault"
+	x-scale 0.72
+	y-scale 0.72
+	randomflipx
+	randomflipy
+}
+decal BloodBig05
+{
+	pic wblood10
+	shade "BloodDefault"
+	x-scale 0.72
+	y-scale 0.72
+	randomflipx
+	randomflipy
+}
+decal BloodBig06
+{
+	pic wblood11
+	shade "BloodDefault"
+	x-scale 0.72
+	y-scale 0.72
+	randomflipx
+	randomflipy
+}
+decal BloodBig07
+{
+	pic wblood12
+	shade "BloodDefault"
+	x-scale 0.72
+	y-scale 0.72
+	randomflipx
+	randomflipy
+}
+decal BloodBig08
+{
+	pic wblood13
+	shade "BloodDefault"
+	x-scale 0.72
+	y-scale 0.72
+	randomflipx
+	randomflipy
+}
+decal BloodBig09
+{
+	pic wblood14
+	shade "BloodDefault"
+	x-scale 0.72
+	y-scale 0.72
+	randomflipx
+	randomflipy
+}
+decal BloodBig10
+{
+	pic wblood15
+	shade "BloodDefault"
+	x-scale 0.72
+	y-scale 0.72
+	randomflipx
+	randomflipy
+}
+decal BloodBig11
+{
+	pic wblood16
+	shade "BloodDefault"
+	x-scale 0.72
+	y-scale 0.72
+	randomflipx
+	randomflipy
+}
+decal BloodBig12
+{
+	pic wblood17
+	shade "BloodDefault"
+	x-scale 0.72
+	y-scale 0.72
+	randomflipx
+	randomflipy
+}
+decal BloodBig13
+{
+	pic wblood18
+	shade "BloodDefault"
+	x-scale 0.72
+	y-scale 0.72
+	randomflipx
+	randomflipy
+}
+decal BloodBig14
+{
+	pic wblood19
+	shade "BloodDefault"
+	x-scale 0.72
+	y-scale 0.72
+	randomflipx
+	randomflipy
+}
+
+decalgroup BloodSplat
+{
+	//Small blood from SD3TII
+	SD3TIISplat1			5
+	SD3TIISplat2			5
+	SD3TIISplat3			5
+	SD3TIISplat4			5
+	SD3TIISplat5			5
+	SD3TIISplat6			5
+	SD3TIISplat7			5
+	SD3TIISplat8			5
+	//Small blood new from AEoD6
+	BloodSmall01			5
+	BloodSmall02			5
+	BloodSmall03			5
+	BloodSmall04			5
+	BloodSmall05			5
+	
+	//big blood from SD3TII
+	SD3TIISplatBigger1		1
+	SD3TIISplatBigger2		1
+	SD3TIISplatBigger3		1
+	SD3TIISplatBigger4		1
+	SD3TIISplatBigger5		1
+	//big blood new from AEoD6
+	BloodBig01				1
+	BloodBig02				1
+	BloodBig03				1
+	BloodBig04				1
+	BloodBig05				1
+	BloodBig06				1
+	BloodBig07				1
+	BloodBig08				1
+	BloodBig09				1
+	BloodBig10				1
+	BloodBig11				1
+	BloodBig12				1
+	BloodBig13				1
+	BloodBig14				1
+}
+
+decalgroup BloodSmear
+{
+	//Small blood from SD3TII
+	SD3TIISplat1			5
+	SD3TIISplat2			5
+	SD3TIISplat3			5
+	SD3TIISplat4			5
+	SD3TIISplat5			5
+	SD3TIISplat6			5
+	SD3TIISplat7			5
+	SD3TIISplat8			5
+	//Small blood new from AEoD6
+	BloodSmall01			5
+	BloodSmall02			5
+	BloodSmall03			5
+	BloodSmall04			5
+	BloodSmall05			5
+	
+	//big blood from SD3TII
+	SD3TIISplatBigger1		1
+	SD3TIISplatBigger2		1
+	SD3TIISplatBigger3		1
+	SD3TIISplatBigger4		1
+	SD3TIISplatBigger5		1
+	//big blood new from AEoD6
+	BloodBig01				1
+	BloodBig02				1
+	BloodBig03				1
+	BloodBig04				1
+	BloodBig05				1
+	BloodBig06				1
+	BloodBig07				1
+	BloodBig08				1
+	BloodBig09				1
+	BloodBig10				1
+	BloodBig11				1
+	BloodBig12				1
+	BloodBig13				1
+	BloodBig14				1
+}

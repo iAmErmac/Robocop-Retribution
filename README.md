@@ -1,10 +1,12 @@
-# Robocop Weapons mod for VR
+# Robocop Retribution (VR Enhanced Edition)
 
-![Robocop Doom](https://i.imgur.com/jlmmlg1.jpg)
+![Robocop Retribution](https://i.imgur.com/h4Q0CUV.png)
 
-A GZDoom weapon mod for Doom/Heretic/Chex by Ermac (https://www.reddit.com/user/iAmErmac)
+Robocop Doom is a 17-level total conversion for GZDoom/Doom II developed and released by Mike MacDee (Impie) in 2019. It attempts to recreate the original film in the Doom engine, taking many liberties with the plot like most video game adaptations of the film were known to do. It not only pays tribute to the film series, but the 1988 arcade game as well.
 
-This is a 3D weapon mod to use with Robocop Doom mod (GZDoom VR). By design, this mod should allow using Robocop mod weapons with other map-packs and gameplay mods in Doom/Heretic/Chex-Quest as well. Optionally You can replace Doom/Chex monsters with the mobs from Robocop mod (works for repplacing custom monsters as well).
+This mod is a VR enhanced modification of Robocop Doom aiming to bring VR centric improvements (for ports like QuestZDoom)
+
+ZDoom discussions: https://forum.zdoom.org/viewtopic.php?t=64130
 
 To download the Robocop Doom VR mod click the download button below:
 
@@ -14,42 +16,45 @@ To download the Robocop Doom VR mod click the download button below:
 
 ## Features
 * 3D Weapon models
-* Cross-wad support, can be used with other supported iwad
+* Cross-wad support, can be used with other supported iwads (Doom/Chex/Heretic)
 * Cobra assault cannon features a holo-sight now. Bind 'Zoom' button in configuration and then activate zoom to toggle the holo-sight on/off
 * Replace monsters from Doom/Chex with robocop mobs
 * Enhanced projectiles, decals, smoke effects on Enhanced weapon mode
+
+![Robocop Retribution](https://i.imgur.com/jGA2ETg.jpg)
 
 ## Installation
 
 ### GZDoom VR (PC-VR)
 
-Latest GZDoom VR: https://github.com/hh79/gz3doom/releases
+Latest GZDoom VR: https://github.com/hh79/gz3doom/releases/latest
+
+Latest GZDoom VR Dual Wield version: https://github.com/iAmErmac/gzdoomvr/releases/latest
 
 To install:
 
     Extract GZDoom-VR to a folder.
     Copy original doom wads into the folder.
     Copy this mod into the folder.
-    Run with gzdoomvr.exe -iwad doom2.wad -file robocop.pk3 LATEST_MOD_FILE_NAME
+    Run with gzdoomvr.exe -iwad doom2.wad -file robocop.pk3 LATEST_ROBOCOP_MOD
   
 OR use DoomRunner: https://github.com/Youda008/DoomRunner/releases/ to load mods with GZDoom
 
 ### QuestZDoom (Oculus Quest)
 
 Official QuestZDoom: https://github.com/DrBeef/QuestZDoom/releases/latest
-Unofficial QuestZDoom (For more bugfixes and updates): https://github.com/emawind84/QuestZDoom/releases/latest
+
+Unofficial QuestZDoom: https://github.com/emawind84/QuestZDoom/releases/latest
 
 QuestZDoom launcher: https://github.com/baggyg/QuestZDoomLauncher/releases/latest
 
 To install:
 
-    Copy ww-cola3-v2.5.pk3 and Cola 3 VR weapons mod into /sdcard/QuestZDoom/mods/
-    Load QuestZDoom Launcher. select the mods in following order and launch QuestZDoom:
-	Doom 2 + Cola 3 + Cola 3 VR weapons
+    Load QuestZDoom Launcher. select this mod along with others mods
 
 ## Wad and mod support:
 
-This is a weapon mod for Robocop Doom mod (https://mikestoybox.net/2019/03/31/robocop-doom/). But this mod also supports loading with the following wads:
+This mod also supports loading with the following iwads:
 * Doom
 * Doom 2
 * Heretic
@@ -59,7 +64,20 @@ This is a weapon mod for Robocop Doom mod (https://mikestoybox.net/2019/03/31/ro
 
 ## Recommended mods to combine with:
 
-* [Nash's Gore Mod: Vengeance Edition](https://www.moddb.com/mods/nashs-gore-mod-vengeance-edition)
+* [Hyper-V:](https://github.com/iAmErmac/Hyper-V)
+  - Enables a lot of VR focused features such as motion melee attacks and item pulling
+  
+* [DamNums:](https://forum.zdoom.org/viewtopic.php?t=55048)
+  - DamNums is a pretty simple concept: shoot monsters and little numbers pop out that tell you how much damage you did
+  
+* [Top HP Bars:](https://forum.zdoom.org/viewtopic.php?t=55048)
+  - Really simple mod to add HP bars on top of enemies and players. Performance version is recommended for VR
+  
+* [PyWeaponWheel:](https://github.com/iAmErmac/PyWeaponWheel-VR)
+  - An excellent and simple weapon wheel to quickly switch between weapons
+  
+* [Gearbox:](https://github.com/iAmErmac/gearbox)
+  - Another excellent weapon wheel but also supports inventory items
 
 
 ## Credits
@@ -67,7 +85,7 @@ This is a weapon mod for Robocop Doom mod (https://mikestoybox.net/2019/03/31/ro
 * ImpieTwo - for creating Robocop Doom mod
 * Sgt Mark IV (Brutal Doom) - for enhanced effect sprites and codes
 * Jekyll Grim Payne (Beautiful Doom) - for enhanced effect sprites, sounds, codes
-* DBThanatos (D4T) - for glowing bulletcip decal
+* DBThanatos (D4T) - for glowing bulletcip decal and gore
 * Cherno - for SimSun shader
 
 ## 3D Model credits

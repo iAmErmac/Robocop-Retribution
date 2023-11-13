@@ -1,5 +1,6 @@
 version "3.0"
 
+#include "zscript/gore.txt"
 #include "zscript/replacements.txt"
 #include "zscript/superhuman_attributes.txt"
 #include "zscript/superhuman_moves.txt"

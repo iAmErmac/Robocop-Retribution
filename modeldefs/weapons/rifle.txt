@@ -1,0 +1,97 @@
+
+Model CobraAssaultCannon
+{
+   Path "models/weapons/cobra"
+   Model 0 "cobra.md3"
+   Skin 0 "cobra_tex.jpg"
+   Model 1 "cobra_scope.md3"
+   SurfaceSkin 1 0 "cobra_tex.jpg"
+   SurfaceSkin 1 1 "cobra_scope_buttons.jpg"
+   SurfaceSkin 1 2 "cobra_scope_glass.jpg"
+   SurfaceSkin 1 3 "cobra_tex.jpg"
+   SurfaceSkin 1 4 "cobra_tex.jpg"
+   Scale -0.61 0.61 0.61
+   Offset 0.0 -30.0 -8.0
+   
+   //Ready
+   FrameIndex COBR A 0 0	FrameIndex COBR A 0 0
+   
+   //Fire
+   FrameIndex COBR B 0 1	FrameIndex COBR B 0 1
+   FrameIndex COBR C 0 2	FrameIndex COBR C 0 2
+   FrameIndex COBR D 0 3	FrameIndex COBR D 0 3
+}
+
+//Scope zoom view
+Model CobraAssaultCannon
+{
+   Path "models/weapons/cobra"
+   Model 0 "cobra.md3"
+   Skin 0 "cobra_tex.jpg"
+   Scale -0.61 0.61 0.61
+   Offset 0.0 -30.0 -8.0
+   
+   //Ready
+   FrameIndex COBR E 0 0
+   
+   //Fire
+   FrameIndex COBR F 0 1
+   FrameIndex COBR G 0 2
+   FrameIndex COBR H 0 3
+}
+
+//scope hud
+Model CobraAssaultCannon
+{
+   Path "models/weapons/cobra"
+   Model 0 "roboscope.md3"
+   SurfaceSkin 0 0 "roboscope1.jpg"
+   SurfaceSkin 0 1 "roboscope1.jpg"
+   SurfaceSkin 0 2 "roboscope2.jpg"
+   Scale -0.61 0.61 0.61
+   Offset 0.0 -30.0 -8.0
+   
+   NOINTERPOLATION
+   
+   FrameIndex COBS A 0 0
+   FrameIndex COBS B 0 1
+   FrameIndex COBS C 0 2
+   FrameIndex COBS D 0 3
+   FrameIndex COBS E 0 4
+   FrameIndex COBS F 0 5
+   FrameIndex COBS G 0 6
+   FrameIndex COBS H 0 7
+   FrameIndex COBS I 0 8
+   FrameIndex COBS J 0 9
+}
+
+//Muzzle flash
+Model CobraAssaultCannon
+{
+   Path "models/weapons/cobra"
+   Model 0 "rifle_mf.md3"
+   Skin 0 "rifle_mf.png"
+   Scale -0.61 0.61 0.61
+   Offset 0.0 -30.0 -8.0
+   
+   FrameIndex CRMF A 0 1
+}
+
+//Pickup model
+Model CobraAssaultCannon
+{
+   Path "models/weapons/cobra"
+   Model 0 "cobra_pickup.md3"
+   SurfaceSkin 0 0 "cobra_tex.jpg"
+   SurfaceSkin 0 1 "cobra_scope_glass.jpg"
+   SurfaceSkin 0 2 "cobra_scope_buttons.jpg"
+   SurfaceSkin 0 3 "cobra_tex.jpg"
+   Scale 0.35 0.35 0.35
+   Offset 0.0 0.0 0.0
+   
+   ROTATING
+   ROTATION-SPEED 0.2
+   
+   //Ready
+   FrameIndex CBRP A 0 0
+}

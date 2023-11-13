@@ -1,0 +1,19 @@
+
+ACTOR BioKit : Medikit replaces Medikit
+{
+  Inventory.Amount 50
+  Inventory.PickupMessage "Picked up a biokit."
+  Health.LowMessage 25, "Picked up a biokit that you REALLY need!"
+}
+
+ACTOR CyberFood : Stimpack replaces Stimpack
+{
+  Inventory.Amount 15
+  Inventory.PickupMessage "Tastes like baby food!"
+  States
+  {
+    Spawn:
+	STIM AAAAAAAB 5
+	Loop
+  }
+}

@@ -5,14 +5,14 @@ Class RobocopWeaponReplace: EventHandler
 	{
 		switch(GetDefaultByType(e.Replacee).GetSpecies())
 		{
-			case 'Pistol': e.Replacement = 'Auto9_3D';  break;
-			case 'Shotgun': e.Replacement = 'RoboShotgun_3D';  break;
-			case 'SuperShotgun': e.Replacement = 'CobraAssaultCannon_3D';  break;
-			case 'Chainsaw': e.Replacement = 'Grinder_3D';  break;
-			case 'Chaingun': e.Replacement = 'Ed209Gun_3D';  break;
-			case 'RocketLauncher': e.Replacement = 'MiniMissileShooter_3D';  break;
-			case 'PlasmaRifle': e.Replacement = 'M27PlasmaRifle_3D';  break;
-			case 'BFG9000': e.Replacement = 'M27PlasmaRifle_3D';  break;
+			case 'Pistol': e.Replacement = 'Auto9';  break;
+			case 'Shotgun': e.Replacement = 'RoboShotgun';  break;
+			case 'SuperShotgun': e.Replacement = 'CobraAssaultCannon';  break;
+			case 'Chainsaw': e.Replacement = 'Grinder';  break;
+			case 'Chaingun': e.Replacement = 'Ed209Gun';  break;
+			case 'RocketLauncher': e.Replacement = 'MiniMissileShooter';  break;
+			case 'PlasmaRifle': e.Replacement = 'M27PlasmaRifle';  break;
+			case 'BFG9000': e.Replacement = 'M27PlasmaRifle';  break;
 		}
 	}
 }
