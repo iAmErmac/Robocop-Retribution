@@ -1,0 +1,166 @@
+
+ACTOR BeamHood2
+{
+  //$Category RobocopBaddies
+  Health 40
+  Radius 20
+  Height 56
+  Speed 10
+  PainChance 250
+  Scale 1.25
+  Monster
+  SeeSound "goon/sight"
+  PainSound "goon/pain"
+  DeathSound "goon/death"
+  ActiveSound "goon/active"
+  Obituary "%o was picked off."
+  DropItem "Clip" 96
+  Tag "Beam Perp"
+  +NOINFIGHTING
+  States
+  {
+  Spawn:
+    GON1 Z 10 A_Look
+    Loop
+  See:
+    HUD1 A 0 A_JumpIfHealthLower (20, "Run")
+    HUD1 AABBCCDD 3 A_Chase
+    Loop
+  Run:
+    HUD1 AABBCCDD 2 A_Chase
+    Loop
+  Missile:
+    HUD1 EF 6 A_FaceTarget
+	HUD1 G 0 A_PlaySound("gruntshot/fire")
+    HUD1 G 0 BRIGHT A_CustomMissile("gruntball", 40, 0, random(-7,7),0)
+	HUD1 G 0 BRIGHT A_CustomMissile("gruntball", 40, 0, random(-7,7),0)
+	HUD1 G 6 BRIGHT A_CustomMissile("gruntball", 40, 0, random(-7,7),0)
+    HUD1 F 8
+    Goto See
+  Pain:
+    HUD1 H 8 A_Pain
+	Goto See
+  Death:
+    HUD1 I 7 A_Scream
+    HUD1 J 7 A_NoBlocking
+    HUD1 KLM 7
+    HUD1 M -1
+    Stop
+  XDeath:
+    HUD1 N 7 A_Scream
+    HUD1 O 7 A_NoBlocking
+    HUD1 PQR 7
+    HUD1 R -1
+    Stop
+  }
+}
+
+ACTOR MissileGuy2
+{
+  //$Category RobocopBaddies
+  Health 120
+  Radius 20
+  Height 56
+  Speed 10
+  PainChance 250
+  Mass 800
+  Monster
+  SeeSound "hick/sight"
+  PainSound "hick/pain"
+  DeathSound "hick/death"
+  ActiveSound "hick/active"
+  Obituary "%o was scattered across the state."
+  +NOINFIGHTING
+  +MISSILEMORE
+  +DONTHARMCLASS
+  Tag "Missile Perp"
+  DropItem "MiniRocketAmmo", 64
+  DropItem "MiniRocketAmmo", 16
+  States
+  {
+  Spawn:
+    GON3 A 10 A_Look
+    Loop
+  See:
+    HICK A 0 A_JumpIfHealthLower (100, "Run")
+    HICK AABBCCDD 3 A_Chase
+    Loop
+  Run:
+    HICK AABBCCDD 2 A_Chase
+    Loop
+  Missile:
+    HICK E 6 A_FaceTarget
+    HICK F 3 Bright A_CustomMissile("badminirocket", 40, 0, 0,0)
+    HICK E 8
+    Goto See
+  Pain:
+    HICK G 8 A_Pain
+	Goto See
+  Death:
+    HICK G 7 A_Scream
+    HICK H 7 A_NoBlocking
+    HICK IJ 7
+    HICK J -1
+    Stop
+  XDeath:
+    HICK K 7 A_Scream
+    HICK L 7
+    HICK M 7
+    HICK N 6 A_NoBlocking
+    HICK N -1
+    Stop
+  }
+}
+
+ACTOR Beefcake2
+{
+  //$Category RobocopBaddies
+  Health 100
+  PainChance 140
+  Speed 14
+  Radius 20
+  Height 56
+  Mass 800
+  Monster
+  +NOINFIGHTING
+  SeeSound "bruiser/Sight"
+  ActiveSound "bruiser/active"
+  PainSound "bruiser/pain"
+  DeathSound "bruiser/death"
+  Obituary "%o was ripped clean in half."
+  Tag "Brawler Perp"
+  States
+  {
+  Spawn:
+    GON4 A 10 A_Look
+    Loop
+  See:
+    BEEF AABBCCDD 2 fast A_Chase
+    Loop
+  Melee:
+    BEEF E 6 A_FaceTarget
+    BEEF F 6 A_CustomMeleeAttack (random(10,15), "robopunch/smack", "bruiser/attack", "", 1) 
+    BEEF G 6 A_FaceTarget
+    BEEF H 6 A_CustomMeleeAttack (random(10,15), "robopunch/smack", "bruiser/attack", "", 1)
+    Goto See
+  Pain:
+    BEEF I 4
+    BEEF I 4 A_Pain
+    Goto See
+  Death:
+    BEEF I 7 A_Scream
+    BEEF JKL 7
+    BEEF M 1 A_PlaySound ("bruiser/Thud")
+    BEEF M 6 A_NoBlocking
+    BEEF M -1
+    Stop
+  XDeath:
+    BEEF I 7 A_Scream
+    BEEF N 7
+	BEEF OP 7
+    BEEF Q 1 A_PlaySound ("bruiser/Thud")
+    BEEF Q 6 A_NoBlocking
+    BEEF Q -1
+    Stop
+  }
+}

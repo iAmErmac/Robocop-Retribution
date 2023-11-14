@@ -5,6 +5,13 @@ Class RobocopWeaponReplace: EventHandler
 	{
 		switch(GetDefaultByType(e.Replacee).GetSpecies())
 		{
+			case 'BeamHood': e.Replacement = 'BeamHood2';  break;
+			case 'MissileGuy': e.Replacement = 'MissileGuy2';  break;
+			case 'Beefcake': e.Replacement = 'Beefcake2';  break;
+		}
+		
+		switch(GetDefaultByType(e.Replacee).GetSpecies())
+		{
 			case 'Pistol': e.Replacement = 'Auto9';  break;
 			case 'Shotgun': e.Replacement = 'RoboShotgun';  break;
 			case 'SuperShotgun': e.Replacement = 'CobraAssaultCannon';  break;
