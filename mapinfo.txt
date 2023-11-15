@@ -3,7 +3,7 @@ Gameinfo
 	Playerclasses = "RoboPlayer"
 	titlemusic = "ROBOTITL"
 	intermissionmusic = "ROBOINTR"
-	EventHandlers = "XGoreHandler", "RobocopWeaponReplace", "RobocopMonsterReplace", "PlayerPropModifier", "SuperHumanMovesHandler"
+	EventHandlers = "XGoreHandler", "BodyPartShotHandler", "RobocopWeaponReplace", "RobocopMonsterReplace", "PlayerPropModifier", "SuperHumanMovesHandler"
 }
 
 clearskills

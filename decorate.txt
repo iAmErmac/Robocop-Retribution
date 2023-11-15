@@ -3,7 +3,7 @@
 #include "actors/pickups.txt"
 #include "actors/d4t_gore.txt"
 #include "actors/splash_fx.txt"
-#include "actors/sprite_fix.txt"
+#include "actors/goons.txt"
 
 #include "actors/weapons/misc.txt"				//Enhanced SFX
 

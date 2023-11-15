@@ -1,0 +1,200 @@
+
+Class ActorBodyShotAssist : Inventory
+{
+	Default
+	{
+		Inventory.maxamount 1;
+	}
+
+	override void DoEffect()
+	{
+		if(owner.countinv("disableNutShotTarget"))
+		{
+			if(nutShotBox) nutShotBox.destroy();
+			return;
+		}
+	
+		let player = Players[consoleplayer].mo;
+		if(!player) return;
+		
+		if(owner.Distance3D(player) <= 256 && owner.CheckSight(player))
+		{
+			if(!nutShotBox)
+			{
+				nutShotBox = Actor.Spawn("Z_NuthotHitbox", owner.pos);
+				nutShotBox.master = owner;
+			}
+		}
+		else
+		{
+			if(nutShotBox)
+				nutShotBox.destroy();
+		}
+		
+		Super.DoEffect();
+	}
+
+	private actor nutShotBox;
+}
+
+Class disableNutShotTarget : Inventory
+{
+	Default
+	{
+		Inventory.maxamount 1;
+	}
+	
+	override void DoEffect()
+	{
+		if(getAge() && getAge() > 2) destroy();
+	}
+}
+
+Class Z_NuthotHitbox : Actor
+{
+	Default
+	{
+	Health 	0x7FFFFFFF;
+	Mass 	0x7FFFFFFF;
+	BloodType "None";
+	Renderstyle "AddStencil";
+	StencilColor "FFA500";
+	Scale 1;
+	radius 12;
+	height 7;
+	+SOLID; 
+	+SHOOTABLE; 
+	+NODAMAGETHRUST; 
+	+NORADIUSDMG; 
+	+NOGRAVITY; 
+	+NEVERTARGET;
+	Species "Bulletpuff2";
+	}
+	
+	int lastHealth;
+	double hsfactor;
+
+	override void BeginPlay() 
+	{
+		self.lastHealth = self.health;
+		super.BeginPlay();
+	}
+	
+	override void Tick()
+	{
+		Super.Tick();
+		
+		bINVISIBLE = true;
+		hsfactor = frandom(1.2, 1.8); // factor of which the damage is multiplied. 
+	
+		if(!master || master.health < 1) Destroy();
+			
+		A_Warp(AAPTR_MASTER,10,0,master.height * 0.4,0,WARPF_INTERPOLATE|WARPF_COPYINTERPOLATION|WARPF_NOCHECKPOSITION);
+	
+		if(self.health < self.lastHealth)
+		{
+			A_DamageMaster(int(self.lastHealth - self.Health)*hsfactor,"NutShot", 0, Null, "None", AAPTR_PLAYER1);
+			self.lasthealth = self.health;
+		}
+	}
+	
+	override bool CanCollideWith(actor other, bool passive)
+	{
+		// if an incoming projectile is from the Hitbox's master, ignore it.
+		if((other.target && (other.target == master)) || (other == master))
+			return false;
+			
+		return super.CanCollideWith(other, passive);
+	}
+	
+	States
+	{
+	Spawn:
+		AMRK A 1;
+		loop;
+	Death:
+		TNT1 A 1;
+		stop;
+	}
+}
+
+Class BodyPartShotHandler : EventHandler
+{
+	override void WorldThingSpawned(WorldEvent e)
+	{
+		if(e.thing is "ShotgunHood2")
+		{
+			e.thing.SetInventory("ActorBodyShotAssist", 1);
+		}
+	}
+	
+	//an indicator for nut shot
+	override void WorldTick()
+	{
+		let player = players[consolePlayer].mo;
+		if(!player) return;
+		
+		if(!nutShotTarget) nutShotTarget = Actor.Spawn("NutShotTargetIcon", player.pos);
+		nutShotTarget.bInvisible = true;
+		
+		double pitch = player.AimTarget() ? player.BulletSlope(null, ALF_PORTALRESTRICT) : player.pitch;
+		FTranslatedLineTarget t;
+		let _puff = player.LineAttack (player.angle, 256, pitch, 0, "Melee", "RBDummyPuff", LAF_NOIMPACTDECAL| LAF_NORANDOMPUFFZ, t);
+		
+		if (t.linetarget && (t.linetarget is "Z_NuthotHitbox"))
+		{
+			double distance = _puff.Distance3D(player);
+			//nutShotTarget.scale.x    = 3.0;
+			//nutShotTarget.scale.y    = 3.0;
+			nutShotTarget.bInvisible = false;
+			nutShotTarget.SetOrigin(_puff.pos, true);
+		}
+	}
+	
+	private actor nutShotTarget;
+}
+
+class RBDummyPuff : Actor
+{
+  Default
+  {
+    Mass        0;
+    Radius      1;
+    Height      2;
+
+    +NOBLOCKMAP;
+    +NOGRAVITY;
+    +BLOODLESSIMPACT;
+    +PUFFONACTORS;
+    +DONTSPLASH;
+    +NOTRIGGER;
+	+NOTARGET;
+    +FORCEXYBILLBOARD;
+    +NOTONAUTOMAP;
+    +SKYEXPLODE;
+  }
+
+  States
+  {
+    Spawn:
+      TNT1 A 2;
+      stop;
+  }
+}
+
+class NutShotTargetIcon : RBDummyPuff
+{
+  Default
+  {
+	Renderstyle "Add";
+	scale 0.4;
+  }
+  
+  States
+  {
+    Spawn:
+      NSHT ABC 10;
+      loop;
+  }
+
+}
