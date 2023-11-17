@@ -1,6 +1,7 @@
 version "3.0"
 
 #include "zscript/actor_base.txt"
+#include "zscript/weapon_base.txt"
 #include "zscript/gore.txt"
 #include "zscript/replacements.txt"
 #include "zscript/superhuman_attributes.txt"

@@ -4,8 +4,8 @@ Model Auto9
    Path "models/weapons/auto9"
    Model 0 "auto9.md3"
    Skin 0 "auto9.png"
-   Scale -0.65 0.65 0.65
-   Offset 0.0 -30.0 -8.0
+   Scale -0.85 .85 .85
+   Offset 0.0 -25.0 -7.0
    
    //Ready
    FrameIndex AUT9 A 0 0
@@ -13,18 +13,62 @@ Model Auto9
    //Fire
    FrameIndex AUT9 B 0 1
    FrameIndex AUT9 C 0 2
+   
+   //Gun spin
+   FrameIndex AUT9 D 0 4
+   FrameIndex AUT9 E 0 5
+   FrameIndex AUT9 F 0 6
+   FrameIndex AUT9 G 0 7
+   FrameIndex AUT9 H 0 8
+   FrameIndex AUT9 I 0 9
+   FrameIndex AUT9 J 0 10
+   FrameIndex AUT9 K 0 11
+}
+
+//With hand
+Model Auto9
+{
+   Path "models/weapons/auto9"
+   Model 0 "auto9.md3"
+   Skin 0 "auto9.png"
+   Model 1 "auto9_hand.md3"
+   Skin 1 "robohand.png"
+   Scale -0.85 .85 .85
+   Offset 0.0 -25.0 -7.0
+   
+   //Fire
+   FrameIndex AUH9 B 0 1	FrameIndex AUH9 B 1 1
+   FrameIndex AUH9 C 0 2	FrameIndex AUH9 C 1 2
+   
+   NOINTERPOLATION
+   
+   //Ready
+   FrameIndex AUH9 A 0 0	FrameIndex AUH9 A 1 0
+   
+   //Gun spin
+   FrameIndex AUH9 D 0 4	FrameIndex AUH9 D 1 4
+   FrameIndex AUH9 E 0 5	FrameIndex AUH9 E 1 5
+   FrameIndex AUH9 F 0 6	FrameIndex AUH9 F 1 6
+   FrameIndex AUH9 G 0 7	FrameIndex AUH9 G 1 7
+   FrameIndex AUH9 H 0 8	FrameIndex AUH9 H 1 8
+   FrameIndex AUH9 I 0 9	FrameIndex AUH9 I 1 9
+   FrameIndex AUH9 J 0 10	FrameIndex AUH9 J 1 10
+   FrameIndex AUH9 K 0 11	FrameIndex AUH9 K 1 11
 }
 
 //Muzzle flash
 Model Auto9
 {
    Path "models/weapons/auto9"
-   Model 0 "pistol_mf.md3"
-   Skin 0 "pistol_mf.png"
-   Scale -0.65 0.65 0.65
-   Offset 0.0 -30.0 -8.0
+   Model 0 "auto9_flash.md3"
+   SurfaceSkin 0 0 "muzzle_flash.png"
+   SurfaceSkin 0 1 "muzzle_flash2.png"
+   SurfaceSkin 0 2 "muzzle_flash.png"
+   SurfaceSkin 0 3 "muzzle_flash.png"
+   Scale -0.85 .85 .85
+   Offset 0.0 -25.0 -7.0
    
-   FrameIndex A9MF A 0 1
+   FrameIndex A9MF A 0 0
 }
 
 //Pickup model

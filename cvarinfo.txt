@@ -1,3 +1,4 @@
+server int rvw_weapon_mode = 1;
 server int rvw_weapons = 1;
 server int rvw_pickupmodel = 0;
 server bool rvw_tracers = true;

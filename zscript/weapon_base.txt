@@ -1,0 +1,62 @@
+
+Class RoboCopWeapon : Weapon
+{
+	action void A_ReplaceSprite(String myvar, String ssprite, bool pickup=false, float sscale=0.7)
+	{
+		int readsetting = CVar.FindCVar(myvar).GetInt();
+		int wsprite = GetSpriteIndex(ssprite);
+
+		if (readsetting && readsetting > 0 && wsprite != -1) {
+			
+			if(pickup)
+			{
+				invoker.sprite = wsprite;
+				invoker.A_SetScale(sscale);
+			}
+			else
+			{
+				if(player)
+				{
+					//int mainhand = !invoker.bOffhandWeapon;
+					//if(mainhand)
+						Player.GetPSprite(PSP_WEAPON).sprite = wsprite;
+					//else
+						//Player.GetPSprite(PSP_OFFHANDWEAPON).sprite = wsprite;
+				}
+			}
+		}
+	}
+}
+
+Class RROffhandWeaponHandler : EventHandler
+{
+	override void WorldLoaded(WorldEvent event)
+	{
+		_isTitlemap = CheckTitlemap();
+	}
+	
+	override void WorldTick()
+	{
+		if(_isTitlemap) return;
+		
+		playerinfo player = players[consoleplayer];
+		if(!player) return;
+		
+		if(!player.OffhandWeapon)
+		{
+			if(!player.mo.countinv("RoboOffhandFist")) player.mo.giveinventory("RoboOffhandFist", 1);
+			Weapon weap = Weapon(player.mo.findinventory("RoboOffhandFist"));
+			player.OffhandWeapon = weap;
+			player.PendingWeapon = weap;
+			player.mo.BringUpWeapon();
+		}
+	}
+
+	private static bool CheckTitlemap()
+	{
+		bool isTitlemap = (level.mapname == "TITLEMAP");
+		return isTitlemap;
+	}
+	
+	private bool _isTitlemap;
+}

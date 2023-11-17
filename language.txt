@@ -1,0 +1,11 @@
+
+[enu default]
+
+RRVR_OPTIONS 					= "Robocop VR Options";
+RRVR_SHOW_HAND 					= "SHow hand";
+RRVR_PICKUPS 					= "Pickup graphics";
+RRVR_WEAPONs 					= "Weapons mode";
+RRVR_TRACER 					= "Bullet Tracers";
+RRVR_WEAPON_FLASH 				= "Muzzle Flash";
+RRVR_MONSTER_REPLACE 			= "Replace monsters with Goons";
+RRVR_MONSTER_REPLACE_TEXT 		= "*Requires a map restart";

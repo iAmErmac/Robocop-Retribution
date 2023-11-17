@@ -1,15 +1,16 @@
 // Fist
-material texture "models/weapons/fist/glove.png" { shader "shaders/simsun.fp" }
+material texture "models/weapons/fist/robohand.jpg" { shader "shaders/simsun.fp" }
 
 // Buzzsaw
 material texture "models/weapons/chainsaw/chainsaw.jpg" { shader "shaders/simsun.fp" }
 
 // Auto9 pistol
 material texture "models/weapons/auto9/auto9.png" { shader "shaders/simsun.fp" }
+material texture "models/weapons/auto9/robohand.jpg" { shader "shaders/simsun.fp" }
 
 // Shotgun
-material texture "models/weapons/ksg/ksg_back.png" { shader "shaders/simsun.fp" }
-material texture "models/weapons/ksg/ksg_front.png" { shader "shaders/simsun.fp" }
+material texture "models/weapons/shotgun/shotgun.jpg" { shader "shaders/simsun.fp" }
+material texture "models/weapons/shotgun/robohand.jpg" { shader "shaders/simsun.fp" }
 
 // Rifle
 material texture "models/weapons/cobra/cobra_tex.jpg" { shader "shaders/simsun.fp" }

@@ -10,7 +10,7 @@
 #include "actors/weapons/fist.txt"
 #include "actors/weapons/grinder.txt"			//Chainsaw
 #include "actors/weapons/auto9.txt"				//Pistol
-#include "actors/weapons/ksg.txt"				//Shotgun
+#include "actors/weapons/shotgun.txt"				//Shotgun
 #include "actors/weapons/cobra.txt"				//Rifle
 #include "actors/weapons/chaingun.txt"			//ED209 gun
 #include "actors/weapons/grenadelauncher.txt"

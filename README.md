@@ -90,10 +90,12 @@ This mod also supports loading with the following iwads:
 
 ## 3D Model credits
 
-* Fist model - https://sketchfab.com/3d-models/robocop-1987-c164d91833e942ffa8d345dfda1b019f
+* ~~Fist model - https://sketchfab.com/3d-models/robocop-1987-c164d91833e942ffa8d345dfda1b019f~~
+* Fist model - https://sketchfab.com/3d-models/robocop-ab0f78a6f57e4a16893d3c7643c82322
 * Grinder - Quake Champions (Gauntlet)
 * Omnicorp Auto9 - https://sketchfab.com/3d-models/omnicorp-auto-9-56f0f8a769c040fd83e5fd820b4af719
-* KSG Shotgun - https://sketchfab.com/3d-models/ksg-shotgun-lowpoly-pbr-c3cd376635f04a65a4f6cada90e45a23
+* ~~KSG Shotgun - https://sketchfab.com/3d-models/ksg-shotgun-lowpoly-pbr-c3cd376635f04a65a4f6cada90e45a23~~
+* Mossberg 500 Shotgun - https://sketchfab.com/3d-models/mossberg-500-0d9bd470fb664d1f803475aae76fd6eb
 * Cobra assault cannon - https://sketchfab.com/3d-models/cobra-assault-cannon-1f23069f767c4d2d843982545a85cd0e
 * Chaingun - https://sketchfab.com/3d-models/tribes-vengeance-chaingun-9117a751877a48b482fbf86dca8d057e
 * M32 grenade launcher - https://sketchfab.com/3d-models/m32-grenade-laucher-f7dea83e9f114de99f2e964572f8d7d7

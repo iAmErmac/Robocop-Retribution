@@ -1,28 +1,28 @@
 AddOptionMenu "OptionsMenu"
 {
-	StaticText " "
-	Submenu "Robocop VR Settings", "RVRW_Settings"
-	Submenu "SuperHuman abilities", "RVRW_SH_Settings"
+	Submenu "$RRVR_OPTIONS", "RRVR_Settings"
+	Submenu "SuperHuman abilities", "RRVR_SH_Settings"
 }
 
-OptionMenu "RVRW_Settings" {
-	Title "Robocop VR Settings"
+OptionMenu "RRVR_Settings" {
+	Title "$RRVR_OPTIONS"
 	StaticText " "
 	
-	Option "Pickup graphics", "rvw_pickupmodel", "VR_PickupModel_Option"
-	Option "Weapons mode", "rvw_weapons", "VR_Weapons_Option"
-	Option "Bullet Tracers", "rvw_tracers", "OnOff"
-	Option "Muzzle Flash sprite", "rvw_weapons_mf", "OnOff"
+	Option "$RRVR_SHOW_HAND", 			"rvw_weapon_mode", "YesNo"
+	Option "$RRVR_PICKUPS", 			"rvw_pickupmodel", "VR_PickupModel_Option"
+	Option "$RRVR_WEAPONs", 			"rvw_weapons", "VR_Weapons_Option"
+	Option "$RRVR_TRACER", 				"rvw_tracers", "OnOff"
+	Option "$RRVR_WEAPON_FLASH", 		"rvw_weapons_mf", "OnOff"
 	
 	Ifgame(CHEX,DOOM)
 	{
 	StaticText " "
-	Option "Replace monsters with Goons", "rvw_robocop_goons", "OnOff"
-	StaticText "*Requires a map restart", "Grey"
+	Option "$RRVR_MONSTER_REPLACE", "rvw_robocop_goons", "OnOff"
+	StaticText "$RRVR_MONSTER_REPLACE_TEXT", "Grey"
 	}
 }
 
-OptionMenu "RVRW_SH_Settings" {
+OptionMenu "RRVR_SH_Settings" {
 	Title "SuperHuman abilities"
 	StaticText " "
 	
